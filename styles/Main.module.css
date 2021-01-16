@@ -42,9 +42,9 @@
 
 .menulink {
   padding: 0px 15px;
-  text-decoration: underline;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
+  font-family: 'Inconsolata', sans-serif;
 }
 
 .introContent {

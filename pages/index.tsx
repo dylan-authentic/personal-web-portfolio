@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout';
-import Plants from '../components/plants';
 import styles from '../styles/Main.module.css';
 
 export default function Home() {
@@ -14,11 +13,11 @@ export default function Home() {
         <div className={styles.introHeader}>
           <h1><span className={styles.coffeeMug}>☕️</span> dylan.cafe</h1>
           <div>
-            <Link href="/">
-              <a className={styles.menulink}>Home</a>
+            <Link href="/bio">
+              <a className={styles.menulink}>My Bio</a>
             </Link>
-            <Link href="/about-me">
-              <a className={styles.menulink}>About Me</a>
+            <Link href="/projects">
+              <a className={styles.menulink}>Projects</a>
             </Link>
             <Link href="/blog">
               <a className={styles.menulink}>Blog Posts</a>

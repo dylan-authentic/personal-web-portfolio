@@ -1,0 +1,37 @@
+.wrapper {
+    padding-bottom: 20px;
+}
+
+.wrapper h1 {
+    color: #1d1d1d;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+.linkWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.linkWrapper a {
+    padding: 15px;
+    font-size: 14px;
+    font-family: 'Inconsolata', sans-serif;
+    text-decoration: underline;
+    color: #014c8d;
+}
+
+.contentWrapper {
+    padding: 20px 50px;
+    margin: 15px 155px 0px 155px; 
+    border: 1px solid #1d1d1d;
+    border-radius: 12px;
+}
+
+.contentWrapper h1 {
+    margin: 0px;
+}
+
+.contentWrapper p {
+    font-family: 'Inconsolata', sans-serif;
+}

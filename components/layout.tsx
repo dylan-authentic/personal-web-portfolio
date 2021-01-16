@@ -30,18 +30,42 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <>
         {home ? (
           <div className={styles.wrapper}>
-            {children}
+            <main>{children}</main>
           </div>
         ) : (
           <>
-            <h1>test</h1>
+          <div className={styles.navBar}>
+            <div className={styles.navBarWrapper}>
+              <div className={styles.container}>
+                <div className={styles.brand}>
+                  <Link href="/">
+                    <a><h1>☕️ dylan.cafe</h1></a>
+                  </Link>
+                </div>
+                <div className={styles.navMenu}>
+                  <Link href='/'><a>Home</a></Link>
+                  <Link href='/bio'><a>My Bio</a></Link>
+                  <Link href='/projects'><a>Projects</a></Link>
+                  <Link href='/blog'><a>Blog</a></Link>
+                  <Link href='/contact'><a>Contact</a></Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <main>{children}</main>
+          <div className={styles.footerWrapper}>
+            <div className={styles.footer}>
+              <Link href="/">
+                <a>dylan.cafe</a>
+              </Link>
+            </div>
+          </div>
           </>
         )}
-      </header>
-      {/* <main></main> */}
+      </>
     </div>
   )
 }
