@@ -49,7 +49,7 @@ export default function Layout({
                   <Link href='/'><a>Home</a></Link>
                   <Link href='/bio'><a>My Bio</a></Link>
                   <Link href='/projects'><a>Projects</a></Link>
-                  <Link href='/blog'><a>Blog</a></Link>
+                  {/* <Link href='/blog'><a>Blog</a></Link> */}
                   <Link href='/contact'><a>Contact</a></Link>
                 </div>
               </div>

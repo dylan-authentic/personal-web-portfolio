@@ -47,7 +47,7 @@ export default function Projects() {
                             <p>My personal daily coding practice in which I study and implement various software skills such as algorithms, data structures, etc.</p>
                         </div>
                         <div className={styles.projectItemBottom}>
-                            <a target='_blank' href="#">🔗 Link</a>
+                            <a target='_blank' href="#">🔗 (No Link Available)</a>
                             <a target='_blank' href="https://github.com/dylan-authentic/daily-push-upstreams">⌨️ Github</a>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export default function Projects() {
                     <div className={styles.projectItem}>
                         <div className={styles.projectItemTop}>
                             <h3>Python Data Visualization</h3>
-                            <p>A web app that utilizes Python's Flash and Dash libraries to create a data visualization dashboard<br/><br/></p>
+                            <p>A web app that utilizes Python's Flask + Dash libraries to create a data visualization dashboard<br/><br/></p>
                         </div>
                         <div className={styles.projectItemBottom}>
                             <a target='_blank' href="#">🔗 (No Link Available)</a>

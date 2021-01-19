@@ -19,9 +19,9 @@ export default function Home() {
             <Link href="/projects">
               <a className={styles.menulink}>Projects</a>
             </Link>
-            <Link href="/blog">
+            {/* <Link href="/blog">
               <a className={styles.menulink}>Blog Posts</a>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <a className={styles.menulink}>Contact</a>
             </Link>
