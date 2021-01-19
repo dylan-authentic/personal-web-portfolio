@@ -33,3 +33,12 @@ img {
   margin-right: auto;
   max-width: 1200px;
 }
+
+.section.pressed {
+  margin: 0px 55px 40px 55px;
+}
+
+.section.pressed h1 {
+  color: #1d1d1d;
+  font-family: 'Inconsolata', sans-serif;
+}
