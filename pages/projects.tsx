@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout/layout';
-import { ProjectWrapper, ProjectItem, ProjectItemTop, ProjectItemBottom } from '../styles/projects.styles.js';
+import { SectionPressed, ProjectWrapper, ProjectItem, ProjectItemTop, ProjectItemBottom } from '../styles/projects.styles.js';
 
 export default function Projects() {
     return (
@@ -8,7 +8,7 @@ export default function Projects() {
             <Head>
                 <title>My Bio | {siteTitle}</title>
             </Head>
-            <div className='section pressed'>
+            <SectionPressed>
                 <h1>Projects</h1>
                 <ProjectWrapper>
                     <ProjectItem>
@@ -34,7 +34,7 @@ export default function Projects() {
                     <ProjectItem>
                         <ProjectItemTop>
                             <h3>Dylan-Dot-Cafe</h3>
-                            <p>This website - Built using Next.js & Styled Components<br/><br/><br/><br/></p>
+                            <p>This website - Built using Next.js + Styled Components<br/><br/><br/></p>
                         </ProjectItemTop>
                         <ProjectItemBottom>
                             <a target='_blank' href="www.dylan.cafe">🔗 Link</a>
@@ -72,7 +72,7 @@ export default function Projects() {
                         </ProjectItemBottom>
                     </ProjectItem>
                 </ProjectWrapper>
-            </div>
+            </SectionPressed>
         </Layout>
     )
 }

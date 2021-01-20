@@ -32,6 +32,17 @@ const NavBarWrapper = styled.div`
   background-color: #1d1d1d;
   border-radius: 20px;
   padding: 12px 0px;
+  text-align: center;
+  @media ${device.mobileS} {
+    margin: 0px 8px;
+  }
+  @media ${device.tablet} {
+    text-align: left;
+    padding: 20px;
+  }
+  @media ${device.laptop} {
+    margin: 0px 55px;
+  }
 `;
 
 const Container = styled.div`
@@ -61,6 +72,18 @@ const NavMenu = styled.div`
     padding: 0px 12px;
     font-family: 'Inconsolata', sans-serif;
   }
+  @media ${device.mobileS} {
+    float: none;
+    text-align: center;
+    padding-top: 8px;
+    a {
+      display: inline-block;
+    }
+  }
+  @media ${device.tablet} {
+    float: right;
+    padding-top: 15px;
+  }
 `;
 
 const FooterWrapper = styled.div`
@@ -74,7 +97,7 @@ const Footer = styled.div`
   background-color: #2C5364;
   margin-bottom: 15px;
   border-radius: 20px;
-  margin: 0px 200px 35px 200px;
+  ${'' /* margin: 0px 200px 35px 200px; */}
   padding: 5px 18px;
 
   h5 {

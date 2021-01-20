@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from './media-breakpoints';
 
 export const Wrapper = styled.div`
     padding-bottom: 20px;
@@ -13,13 +14,18 @@ export const LinkWrapper = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 15px;
-
     a {
         padding: 15px;
         font-size: 14px;
         font-family: 'Inconsolata', sans-serif;
         text-decoration: underline;
         color: #014c8d;
+    }
+    @media ${device.mobileS} {
+        margin-top: 5px;
+        a {
+            text-align: center;
+        }
     }
 `;
 
@@ -35,5 +41,22 @@ export const ContentWrapper = styled.div`
 
     p {
         font-family: 'Inconsolata', sans-serif;
+    }
+
+    @media ${device.mobileS} {
+        margin: 8px 10px 25px 10px;
+        padding: 16px 33px;
+        p {
+            font-size: 15px;
+        }
+    }
+    @media ${device.tablet} {
+        margin: 8px 55px 25px 55px;
+        p {
+            font-size: 17px;
+        }
+    }
+    @media ${device.laptop} {
+        margin: 8px 110px 25px 110px;
     }
 `;
