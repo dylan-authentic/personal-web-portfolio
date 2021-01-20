@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout, { siteTitle } from '../components/layout';
-import styles from '../styles/Main.module.css';
+import Layout, { siteTitle } from '../components/layout/layout';
+import { Section, IntroHeader, CoffeeMug, MenuLink, IntroContent } from '../styles/home.styles.js';
 
 export default function Home() {
   return (
@@ -9,32 +9,32 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className={styles.section}>
-        <div className={styles.introHeader}>
-          <h1><span className={styles.coffeeMug}>☕️</span> dylan.cafe</h1>
+      <Section>
+        <IntroHeader>
+          <h1><CoffeeMug>☕️</CoffeeMug> dylan.cafe</h1>
           <div>
             <Link href="/bio">
-              <a className={styles.menulink}>My Bio</a>
+              <MenuLink>My Bio</MenuLink>
             </Link>
             <Link href="/projects">
-              <a className={styles.menulink}>Projects</a>
+              <MenuLink>Projects</MenuLink>
             </Link>
-            {/* <Link href="/blog">
-              <a className={styles.menulink}>Blog Posts</a>
-            </Link> */}
+            <Link href="/blog">
+              <MenuLink>Blog Posts</MenuLink>
+            </Link>
             <Link href="/contact">
-              <a className={styles.menulink}>Contact</a>
+              <MenuLink>Contact</MenuLink>
             </Link>
           </div>
-        </div>
-        <div className={styles.introContent}>
+        </IntroHeader>
+        <IntroContent>
           <p>
             I'm laser-focused when it comes to my work, determined to win when it comes to my goals, & good-hearted when it comes to treating others.‍
             <br/><br/>I'm a computer programmer with a background in fullstack web development, database management, & cloud-native applications.
             <br/><br/>I'm an entrepreneur building businesses in my spare time, and I currently advise small and medium-sized businesses in adopting simple and useful technology for the digital era.‍
           </p>
-        </div>
-      </div>
+        </IntroContent>
+      </Section>
     </Layout>
   )
 }

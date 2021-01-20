@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
+import { Styles } from './styles'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Dylan'
 export const siteTitle = '☕️ dylan.cafe'
 
 export default function Layout({
@@ -14,7 +13,7 @@ export default function Layout({
   home?: boolean
 }) {
   return (
-    <div className={styles.container}>
+    <Styles.Container>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -32,40 +31,40 @@ export default function Layout({
       </Head>
       <>
         {home ? (
-          <div className={styles.wrapper}>
+          <Styles.Wrapper>
             <main>{children}</main>
-          </div>
+          </Styles.Wrapper>
         ) : (
           <>
-          <div className={styles.navBar}>
-            <div className={styles.navBarWrapper}>
-              <div className={styles.container}>
-                <div className={styles.brand}>
+          <Styles.NavBar>
+            <Styles.NavBarWrapper>
+              <Styles.Container>
+                <Styles.Brand>
                   <Link href="/">
                     <a><h1>☕️ dylan.cafe</h1></a>
                   </Link>
-                </div>
-                <div className={styles.navMenu}>
+                </Styles.Brand>
+                <Styles.NavMenu>
                   <Link href='/'><a>Home</a></Link>
                   <Link href='/bio'><a>My Bio</a></Link>
                   <Link href='/projects'><a>Projects</a></Link>
                   {/* <Link href='/blog'><a>Blog</a></Link> */}
                   <Link href='/contact'><a>Contact</a></Link>
-                </div>
-              </div>
-            </div>
-          </div>
+                </Styles.NavMenu>
+              </Styles.Container>
+            </Styles.NavBarWrapper>
+          </Styles.NavBar>
           <main>{children}</main>
-          <div className={styles.footerWrapper}>
-            <div className={styles.footer}>
+          <Styles.FooterWrapper>
+            <Styles.Footer>
               <Link href="/">
                 <a>dylan.cafe</a>
               </Link>
-            </div>
-          </div>
+            </Styles.Footer>
+          </Styles.FooterWrapper>
           </>
         )}
       </>
-    </div>
+    </Styles.Container>
   )
 }
