@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from './media-breakpoints';
 
 export const ContactWrapper = styled.div`
     a {
@@ -22,4 +23,21 @@ export const ContactWrapper = styled.div`
 export const LinkWrapper = styled.div`
     text-align: center;
     margin-bottom: 18px;
+    @media ${device.tablet} {
+        margin: 0px 185px 18px 185px;
+    }
+`;
+
+export const SectionPressed = styled.div`
+    margin: 0px 55px 40px 55px;
+    h1 {
+    color: #1d1d1d;
+    font-family: 'Inconsolata', sans-serif;
+    }
+    @media ${device.mobileS} {
+    margin: 0px 10px 40px 10px;
+    }
+    @media ${device.laptop} {
+        margin: 0px 55px 40px 55px;
+    }
 `;

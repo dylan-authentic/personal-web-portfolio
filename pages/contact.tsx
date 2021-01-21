@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout, {siteTitle} from "../components/layout/layout";
-import { ContactWrapper, LinkWrapper } from '../styles/contact.styles.js';
+import { ContactWrapper, LinkWrapper, SectionPressed } from '../styles/contact.styles.js';
 
 export default function TestPost() {
     return (
@@ -8,7 +8,7 @@ export default function TestPost() {
             <Head>
                 <title>Contact Me | {siteTitle}</title>
             </Head>
-            <div className='section pressed'>
+            <SectionPressed>
                 <h1>Get in touch!</h1>
                 <ContactWrapper>
                     <LinkWrapper>
@@ -27,7 +27,7 @@ export default function TestPost() {
                         <a href="https://dylanauthentic.medium.com/">✒️ Medium</a>
                     </LinkWrapper>
                 </ContactWrapper>
-            </div>
+            </SectionPressed>
         </Layout>
     )
   }
