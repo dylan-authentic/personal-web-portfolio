@@ -7,6 +7,7 @@ At the moment, the site is pretty much just a static Next.js website. By buildin
 
 ## To do
 As I continue to build out this site, I'll be working on the following:
-- [ ] Implementing Styled Components
-- [ ] Implementing Media Queries for cross-device compatability
-- [ ] Implementing a headless CMS for my blogging/writing page
+- [X] Implementing Styled Components
+- [X] Implementing Media Queries for cross-device compatability
+- [ ] Implementing a blog
+- [ ] Implementing SSR

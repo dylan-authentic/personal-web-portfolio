@@ -20,7 +20,7 @@ export default function AboutMe() {
                 <div className="container">
                     <ContentWrapper>
                         <h1>About Me</h1>
-                        <p>My name is Dylan Terrell. I was born and raised in Atlanta, GA to a family that I'm incredibly grateful for. Like many young boys growing up, I dreamed of being the next Allen Iverson or Michael Jordan 🏀, but my crossover and jump shot <a href="https://www.youtube.com/watch?v=PPhKo7i8N-M">(while pretty nice)</a>, didn't take me to the big leagues. Instead, I took my talents to New York City 🌃 where I studied computer science 💻 at St. John's University and received my bachelor's degree in May of 2018 🎓. Since then, I've been on a dedicated path of learning the ins and outs of life, pursuing my passions and goals, and growing my skillset and knowledge along the way🚀.</p>
+                        <p>Welcome to my corner of the internet! My name is Dylan Terrell. I was born and raised in Atlanta, GA to a family that I'm incredibly grateful for. Like many young boys growing up, I dreamed of being the next Allen Iverson or Michael Jordan 🏀, but my crossover and jump shot <a href="https://www.youtube.com/watch?v=PPhKo7i8N-M">(while pretty nice)</a>, didn't take me to the big leagues. Instead, I took my talents to New York City 🌃 where I studied computer science 💻 at St. John's University and received my bachelor's degree in May of 2018 🎓. Since then, I've been on a dedicated path of learning the ins and outs of life, pursuing my passions and goals, and growing my skillset and knowledge along the way🚀.</p>
                     </ContentWrapper>
                     <ContentWrapper>
                         <h1>My journey into tech</h1>
