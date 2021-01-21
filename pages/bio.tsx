@@ -11,7 +11,7 @@ export default function AboutMe() {
             <Wrapper>
                 <div className="container">
                     <LinkWrapper>
-                        <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/edf3bc3b-be9b-4d62-aca8-722920d15f10/dterrell_resume%28pdf%29.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210112%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210112T191703Z&X-Amz-Expires=86400&X-Amz-Signature=0d1a08d4537cd3d202d2031511134027d14eaac6f8ffb9e653c76a36f9e257f7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22dterrell_resume%28pdf%29.pdf%22" target='_blank'>⚙️ Resume</a>
+                        <a href="https://drive.google.com/file/d/15rM7y34HmZAT1w7IWN5xGJSJDJ6Cjy7p/view?usp=sharing" target='_blank'>⚙️ Resume</a>
                         <a href="https://www.linkedin.com/in/dylan-terrell/" target='_blank'>🤝 LinkedIn</a>
                         <a href="https://github.com/dylan-authentic" target='_blank'>💻 Github</a>
                         <a href="https://dylanauthentic.medium.com/" target='_blank'>✒️ Medium</a>

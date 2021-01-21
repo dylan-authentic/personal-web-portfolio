@@ -9,22 +9,22 @@ export default function TestPost() {
                 <title>Contact Me | {siteTitle}</title>
             </Head>
             <SectionPressed>
-                <h1>Get in touch!</h1>
+                <h1>Contact Me</h1>
                 <ContactWrapper>
                     <LinkWrapper>
                         <a href="mailto:dylan.terrell14@gmail.com">📧 Email</a>
                     </LinkWrapper>
                     <LinkWrapper>
-                        <a href="#">⚙️ Resume</a>
+                        <a target='_blank' href="https://drive.google.com/file/d/15rM7y34HmZAT1w7IWN5xGJSJDJ6Cjy7p/view?usp=sharing">⚙️ Resume</a>
                     </LinkWrapper>
                     <LinkWrapper>
-                        <a href="https://www.linkedin.com/in/dylan-terrell/">🤝 LinkedIn</a>
+                        <a target='_blank' href="https://www.linkedin.com/in/dylan-terrell/">🤝 LinkedIn</a>
                     </LinkWrapper>
                     <LinkWrapper>
-                        <a href="https://github.com/dylan-authentic">💻 Github</a>
+                        <a target='_blank' href="https://github.com/dylan-authentic">💻 Github</a>
                     </LinkWrapper>
                     <LinkWrapper>
-                        <a href="https://dylanauthentic.medium.com/">✒️ Medium</a>
+                        <a target='_blank' href="https://dylanauthentic.medium.com/">✒️ Medium</a>
                     </LinkWrapper>
                 </ContactWrapper>
             </SectionPressed>

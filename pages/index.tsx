@@ -19,9 +19,9 @@ export default function Home() {
             <Link href="/projects">
               <MenuLink>Projects</MenuLink>
             </Link>
-            <Link href="/blog">
+            {/* <Link href="/blog">
               <MenuLink>Blog Posts</MenuLink>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <MenuLink>Contact</MenuLink>
             </Link>

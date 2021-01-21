@@ -25,7 +25,7 @@ export default function Projects() {
                    <ProjectItem
                         title='Dylan-Dot-Cafe'
                         description='This website - Built using Next.js + Styled Components'
-                        link='www.dylan.cafe'
+                        link='https://dylan.cafe'
                         github='https://github.com/dylan-authentic/dylan-dot-cafe' />
                     <ProjectItem
                         title='Daily Push Up-Streams'
