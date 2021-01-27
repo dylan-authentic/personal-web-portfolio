@@ -87,7 +87,7 @@ export const CoffeeMug = styled.span`
 `;
   
 export const MenuLink = styled.a`
-    padding: 0px 15px;
+    padding: 3px 15px;
     color: white;
     font-size: 15px;
     font-family: 'Inconsolata', sans-serif;
@@ -129,4 +129,10 @@ export const IntroContent = styled.div`
             width: 50%;
         }
     }
+`;
+
+export const LinkBox = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 `;

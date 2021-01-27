@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Styles } from './styles'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 export const siteTitle = '☕️ dylan.cafe'
@@ -48,7 +47,7 @@ export default function Layout({
                   <Link href='/'><a>Home</a></Link>
                   <Link href='/bio'><a>My Bio</a></Link>
                   <Link href='/projects'><a>Projects</a></Link>
-                  {/* <Link href='/blog'><a>Blog</a></Link> */}
+                  <Link href='/articles'><a>Articles</a></Link>
                   <Link href='/contact'><a>Contact</a></Link>
                 </Styles.NavMenu>
               </Styles.Container>

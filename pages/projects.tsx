@@ -7,14 +7,14 @@ export default function Projects() {
     return (
         <Layout>
             <Head>
-                <title>My Bio | {siteTitle}</title>
+                <title>Projects | {siteTitle}</title>
             </Head>
             <SectionPressed>
                 <h1>Projects</h1>
                 <ProjectWrapper>
                     <ProjectItem
                         title='Automated Data Entry'
-                        description='A software script that uses an open-source headless browser to automate data entry from an excel file into a web form'
+                        description='A Node.js script that uses an open-source headless browser to automate data entry from an excel file into a web form'
                         link='https://dylanauthentic.medium.com/how-i-created-a-51-cost-savings-for-my-client-using-simple-browser-automation-fb12052a8ae6'
                         github='https://github.com/dylan-authentic/data-entry-automation' />
                     <ProjectItem
@@ -24,7 +24,7 @@ export default function Projects() {
                         github='https://github.com/authenticmarketplace/shop-cx-amplify-ui-service' />
                    <ProjectItem
                         title='Dylan-Dot-Cafe'
-                        description='This website - Built using Next.js + Styled Components'
+                        description='This website - Built using TypeScript, Next.js, and Styled Components'
                         link='https://dylan.cafe'
                         github='https://github.com/dylan-authentic/dylan-dot-cafe' />
                     <ProjectItem

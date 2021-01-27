@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout/layout';
-import { Section, IntroHeader, CoffeeMug, MenuLink, IntroContent } from '../styles/home.styles.js';
+import { Section, IntroHeader, CoffeeMug, MenuLink, IntroContent, LinkBox } from '../styles/home.styles.js';
 
 export default function Home() {
   return (
@@ -12,20 +12,20 @@ export default function Home() {
       <Section>
         <IntroHeader>
           <h1><CoffeeMug>☕️</CoffeeMug> dylan.cafe</h1>
-          <div>
+          <LinkBox>
             <Link href="/bio">
               <MenuLink>My Bio</MenuLink>
             </Link>
             <Link href="/projects">
               <MenuLink>Projects</MenuLink>
             </Link>
-            {/* <Link href="/blog">
-              <MenuLink>Blog Posts</MenuLink>
-            </Link> */}
+            <Link href="/articles">
+              <MenuLink>Articles</MenuLink>
+            </Link>
             <Link href="/contact">
               <MenuLink>Contact</MenuLink>
             </Link>
-          </div>
+          </LinkBox>
         </IntroHeader>
         <IntroContent>
           <p>

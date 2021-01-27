@@ -40,7 +40,7 @@ const NavBarWrapper = styled.div`
     text-align: left;
     padding: 20px;
   }
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
     margin: 0px 55px;
   }
 `;
