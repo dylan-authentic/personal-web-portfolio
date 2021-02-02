@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout/layout';
-import { SectionPressed, ProjectWrapper } from '../styles/projects.styles.js';
+import { SectionPressed, ProjectWrapper } from '../styles/projects.styles';
 import ProjectItem from '../components/projectItem';
 
 export default function Projects() {

@@ -1,13 +1,8 @@
 # Dylan-Dot-Cafe
-This repo contains code for my personal website - [dylan.cafe](https://dylan.cafe).
+This repo contains code for my personal website - To view the live site, visit [dylan.cafe](https://dylan.cafe).
 
-Currently, this site is not deployed to the link above, as I'm still developing it __(clicking the link above will bring you to a hosted notion website)__. But, to see the work in progress, feel free to clone this repo and run `npm run dev`.
+# Motivation
+The motivation behind this project is to learn and practice building an application using both Next.js and TypeScript. For implementation, I followed the basic Next.js learning tutorial on [nextjs.org](https://nextjs.org/learn/basics/create-nextjs-app?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=next-website). For the TypeScript implementation, I studied and began applying fundamental concepts like type expressions, unions, etc according to [this guide](https://2ality.com/2018/04/type-notation-typescript.html). Typically while learning, I both handwrite and type notes from the topic I'm learning to better understand, and I sometimes post my notes on [the articles section of my website](https://dylan.cafe/articles)
 
-At the moment, the site is pretty much just a static Next.js website. By building the website with Next.js, I've been able to get more familiar with the Next.js ecosystem, file structure, etc.
-
-## To do
-As I continue to build out this site, I'll be working on the following:
-- [X] Implementing Styled Components
-- [X] Implementing Media Queries for cross-device compatability
-- [ ] Implementing a blog
-- [ ] Implementing SSR
+# Styling
+While learning, I came across the various ways of styling a Next.js application. The default way taught in the Next.js tutorial is to use css modules. While this works well, I decided to reach for a different css framework instead. I chose to use `Styled-Components` to style this web app. You'll notice a styles folder in the root of the project that contains route-specific styles in which each route of this site has a corresponding styles file that follows the following naming convention: `<route>.styles.ts`. For individual components found within the `components` folder, a corresponding styles file with component-specific styles sits at the root level of that component. Depending on the size of the styles file, I either export a `Styles` object or I export each individual styled component to be used within the react file.

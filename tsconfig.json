@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/layout/styles.tsx", "components/layout/styles.tsx", "components/projectItem/styles.tsx"  ],
+, "components/layout/styles.ts", "components/layout/styles.ts", "cocomponents/projectItem/styles.ts", "lib/posts.js" ],
   "exclude": [
     "node_modules"
   ]

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout, {siteTitle} from "../components/layout/layout";
-import { ContactWrapper, LinkWrapper, SectionPressed } from '../styles/contact.styles.js';
+import { ContactWrapper, LinkWrapper, SectionPressed } from '../styles/contact.styles';
 
 export default function TestPost() {
     return (

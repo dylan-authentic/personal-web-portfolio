@@ -1,6 +1,6 @@
 import Layout from '../../components/layout/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import { PostWrapper } from '../../styles/posts.styles.js'
+import { PostWrapper } from '../../styles/posts.styles'
 
 interface Paths {
     params: {

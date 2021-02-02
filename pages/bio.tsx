@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout/layout';
-import { Wrapper, LinkWrapper, ContentWrapper } from '../styles/bio.styles.js';
+import { Wrapper, LinkWrapper, ContentWrapper } from '../styles/bio.styles';
 
 export default function AboutMe() {
     return (

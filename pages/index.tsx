@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout/layout';
-import { Section, IntroHeader, CoffeeMug, MenuLink, IntroContent, LinkBox } from '../styles/home.styles.js';
+import { Section, IntroHeader, CoffeeMug, MenuLink, IntroContent, LinkBox } from '../styles/home.styles';
 
 export default function Home() {
   return (
