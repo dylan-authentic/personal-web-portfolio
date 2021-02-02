@@ -13,6 +13,11 @@ export default function Projects() {
                 <h1>Projects</h1>
                 <ProjectWrapper>
                     <ProjectItem
+                        title='My NBA Central'
+                        description='a web app that uses Next.js, TypeScript, and TailwindCSS that allows a user to view NBA teams, players, and game stats'
+                        link='https://my-nba-web-app.vercel.app/'
+                        github='https://github.com/dylan-authentic/my-nba-web-app' />
+                    <ProjectItem
                         title='Automated Data Entry'
                         description='A Node.js script that uses an open-source headless browser to automate data entry from an excel file into a web form'
                         link='https://dylanauthentic.medium.com/how-i-created-a-51-cost-savings-for-my-client-using-simple-browser-automation-fb12052a8ae6'
