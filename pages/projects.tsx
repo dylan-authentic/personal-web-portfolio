@@ -13,8 +13,8 @@ export default function Projects() {
                 <h1>Projects</h1>
                 <ProjectWrapper>
                     <ProjectItem
-                        title='My NBA Central'
-                        description='a web app that uses Next.js, TypeScript, and TailwindCSS that allows a user to view NBA teams, players, and game stats'
+                        title='My NBA Teams'
+                        description='A web app that uses Next.js, TypeScript, and TailwindCSS that allows a user to view NBA teams, players, and game stats'
                         link='https://my-nba-web-app.vercel.app/'
                         github='https://github.com/dylan-authentic/my-nba-web-app' />
                     <ProjectItem
