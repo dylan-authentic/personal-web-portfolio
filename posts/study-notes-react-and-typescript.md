@@ -1,7 +1,7 @@
 ---
 title: 'Using Typescript w/ React'
 date: '2021-02-01'
-tag: Study Notes
+tag: Engineering
 ---
 
 # TypeScript + React

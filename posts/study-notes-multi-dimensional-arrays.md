@@ -1,7 +1,7 @@
 ---
 title: 'Understanding Multi-Dimensional Arrays'
 date: '2021-01-11'
-tag: Study Notes
+tag: Engineering
 ---
 
 # Multi-Dimensional Arrays

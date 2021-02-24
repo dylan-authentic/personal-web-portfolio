@@ -1,7 +1,7 @@
 ---
 title: 'Building a data entry automation script'
 date: '2021-01-18'
-tag: Node.js Program
+tag: Engineering
 ---
 
 If you’ve ever written an automated test suite using software like Selenium, then you’re more than familiar with the power of automating web-based tasks in the browser. But, if you’re unfamiliar with browser automation, a simple explanation is the ability to control interactions with a web browser and web page directly with code. In other words, any action you take when regularly using a website or browsing the internet can also be done using code. This can be incredibly useful for automating repetitive, time-consuming tasks that require dedicated attention to complete — such as entering data into an online form.

@@ -1,7 +1,7 @@
 ---
 title: 'Building Python Arrays from Scratch'
 date: '2021-01-08'
-tag: Study Notes
+tag: Engineering
 ---
 
 ## Python: Arrays in Detail

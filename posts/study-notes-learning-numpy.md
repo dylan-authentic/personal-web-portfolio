@@ -1,7 +1,7 @@
 ---
 title: 'Learning Numpy Basics'
 date: '2021-01-13'
-tag: Study Notes
+tag: Engineering
 ---
 
 # What is numpy?

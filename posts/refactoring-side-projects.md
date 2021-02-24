@@ -1,7 +1,7 @@
 ---
 title: 'Why you should wait to refactor side projects'
 date: '2021-01-12'
-tag: Blog Post
+tag: Engineering
 ---
 
 My biggest de-motivator when it comes to working on side projects is the time it takes to complete my ideas. I, like many of you reading this, am guilty of chronic procrastination when it comes to the things that live inside my head. I really enjoy coming up with concepts and ideas and thinking about all the possible ways they could play out. But, unfortunately many of them fall short of ever existing in reality.

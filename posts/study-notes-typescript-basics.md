@@ -1,7 +1,7 @@
 ---
 title: 'Learning TypeScript Basics'
 date: '2021-01-21'
-tag: Study Notes
+tag: Engineering
 ---
 
 # TypeScript

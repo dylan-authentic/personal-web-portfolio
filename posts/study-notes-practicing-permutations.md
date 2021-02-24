@@ -1,7 +1,7 @@
 ---
 title: 'Practicing Permutations'
 date: '2021-01-14'
-tag: Study Notes
+tag: Engineering
 ---
 
 # Permutations

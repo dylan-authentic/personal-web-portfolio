@@ -1,7 +1,7 @@
 ---
 title: 'Understanding Recursion from first principles'
 date: '2021-01-15'
-tag: Study Notes
+tag: Engineering
 ---
 
 # Recursion
