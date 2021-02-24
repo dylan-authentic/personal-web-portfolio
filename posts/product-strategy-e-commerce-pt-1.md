@@ -13,8 +13,8 @@ Due to the global pandemic accelerating consumer adoption of digital markets, e-
 __I am__ a young professional who is rising in my career, growing my income, and establishing a comfortable lifestyle that I enjoy. __I'm trying to__ shop from an online store that has a pleasant shopping experience and that helps me find quality products that I'll like from small businesses that I can trust. __But__, when I shop from online platforms, I am either overwhelmed with the amount of randomness, or I only go there to buy something specific that I can get quickly, or I don't know if the small business has quality products or good customer service. __Because__ there is no online store that emphasizes a fun and delightful shopping experience and that emphasizes shopping from small and independent businesses, __I feel__ unsure of buying from small businesses that I'm unfamiliar with online unless a friend recommends them to me.
 
 ###### Audience
-- Young professionals with extra disposable income (~Ages 22-32) 
-- Shoppers with the 'Browsing Customer' profile [Reference](https://fitsmallbusiness.com/shopper-profile/)
+- Young professionals with disposable income (~Ages 22-32) 
+- Shoppers with the 'Browsing Customer' profile -- [Reference](https://fitsmallbusiness.com/shopper-profile/)
 - Shoppers with a preference of shopping from small and independent brands
 
 ###### Competitive Landscape
