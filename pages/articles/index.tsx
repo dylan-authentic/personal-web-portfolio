@@ -24,6 +24,7 @@ export default function Blog({ allPostsData }: { allPostsData: Array<PostData>})
         <Layout>
         <div className="container">
             <h1 style={{fontFamily: 'Inconsolata, sans-Serif'}}>Articles</h1>
+            <h3>I write about engineering, product management, and sometimes a project that I'm working on. Some engineering posts are very much so my study notes. Posts about engineering are tagged 'Engineering' and posts about product management are tagged... you guessed it, 'Product Management'. Thanks for reading!</h3>
                 {allPostsData.map((item) => (
                     <BlogItem item={item} key={item.id}/>
                 ))}
