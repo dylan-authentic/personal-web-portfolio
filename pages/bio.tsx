@@ -11,7 +11,7 @@ export default function AboutMe() {
             <Wrapper>
                 <div className="container">
                     <LinkWrapper>
-                        <a href="https://drive.google.com/file/d/1_Yxr7vmX1H2k65M7FKrl_6o-YyGfRJE6/view?usp=sharing" target='_blank'>⚙️ Resume</a>
+                        <a href="https://drive.google.com/file/d/1KVTY2TKNP7KY1gK4dTXbm-AIX0HL2br5/view?usp=sharing" target='_blank'>⚙️ Resume</a>
                         <a href="https://www.linkedin.com/in/dylan-terrell/" target='_blank'>🤝 LinkedIn</a>
                         <a href="https://github.com/dylan-authentic" target='_blank'>💻 Github</a>
                         <a href="https://dylanauthentic.medium.com/" target='_blank'>✒️ Medium</a>
