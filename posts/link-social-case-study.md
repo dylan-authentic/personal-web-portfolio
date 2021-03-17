@@ -1,24 +1,24 @@
 ---
-title: 'Link Social - Product Case Study'
+title: 'Product Case Study: Link Social'
 date: '2021-03-14'
 tag: Product Management
 ---
 
-### The Idea
+#### The Idea
 The idea behind link social is to build a scheduling tool to maintain on-going relationships with friends, family, and other connections in your social circle. 
 
 *Disclaimer:* This is just a product idea used to build a product management case study
 
-### Overview
+#### Overview
 As a young professional in a digitally-connected world, maintaining a well-balanced social life and a busy professional, family, and personal life has become increasingly difficult to achieve. With a growing list of responsibilities, time-consuming ambitions, and a false sense of genuine connection created by social media performance culture, finding time for valuable friendships and genuine interactions between important people in one's life presents a challenge. Link Social aims to provide tools to facilitate healthy, personal interactions between friends, family, and other connections in one's social circle.
 
-### Problem Discovery
+#### Problem Discovery
 ###### Customer Interview Questions
-Q: What's the hardest part about keeping in touch with friends and other connections in your social circle?
-Q: What was the feeling you experienced when you last noticed that difficulty?
-Q: What about the situation made you feel that way?
-Q: How did you proceed the last time you encountered that problem?
-Q: What bothers you most when you face this problem?
+- Q: What's the hardest part about keeping in touch with friends and other connections in your social circle?
+- Q: What was the feeling you experienced when you last noticed that difficulty?
+- Q: What about the situation made you feel that way?
+- Q: How did you proceed the last time you encountered that problem?
+- Q: What bothers you most when you face this problem?
 
 ###### Customer Painpoints
 - I'm generally busy with work and finding time to connect with friends is difficult
@@ -29,9 +29,9 @@ Q: What bothers you most when you face this problem?
 ###### Problem Statement
 *I am* a young professional *trying to* maintain an active social life *but* it's difficult to keep in touch with friends and connections *because* we're all busy with our careers and personal responsibilities, *or* we don't live in the same city anymore
 
-### Business Strategy
+#### Business Strategy
 ###### Customer Segementation
-(Click To View Infographic)[https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c93bc404-bd7c-4e78-809d-59ce3253b8ca/customer-segmentation%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210317%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210317T013425Z&X-Amz-Expires=86400&X-Amz-Signature=628f6b37d4d0ba5528656a6336efcdcf65544ff4950bf06ceb04f37b44a8839a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22customer-segmentation%281%29.png%22]
+[Click To View Infographic](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c93bc404-bd7c-4e78-809d-59ce3253b8ca/customer-segmentation%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210317%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210317T013425Z&X-Amz-Expires=86400&X-Amz-Signature=628f6b37d4d0ba5528656a6336efcdcf65544ff4950bf06ceb04f37b44a8839a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22customer-segmentation%281%29.png%22)
 
 ###### Business Case
 **Competitive Opportunity**
@@ -47,4 +47,4 @@ Q: What bothers you most when you face this problem?
 
 - *Price Risk:* Traditionally, consumers are used to free software services. Due to the business model of Link Social being a subscription service, consumers may be hesitant to pay for the tool. To mitigate this risk, consumers will be offered free tiers to trial the product and begin receiving value prior to making any payment. A second mitigation tactic is to keep the price of the service low enough to get customer buy-in, yet high enough to have an impact as network effects kick in.
 
-- *Customer Experience: The experience of connecting with friends will be a challenging one to design. The product must be easy enough to begin receiving value right away, and the experience must be intuitive enough to continue using the product. It must also be simple enough to allow for people unfamiliar to the service to complete/accept invites and understand what actions they must take next. In other words, the product and experience should be self-explanatory for anyone interacting with it.
+- *Customer Experience:* The experience of connecting with friends will be a challenging one to design. The product must be easy enough to begin receiving value right away, and the experience must be intuitive enough to continue using the product. It must also be simple enough to allow for people unfamiliar to the service to complete/accept invites and understand what actions they must take next. In other words, the product and experience should be self-explanatory for anyone interacting with it.
