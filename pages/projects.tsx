@@ -12,6 +12,14 @@ export default function Projects() {
             <SectionPressed>
                 <h1>Projects</h1>
                 <ProjectWrapper>
+                <ProjectItem
+                        title='Link Social'
+                        description='A product management case study for a mock social networking tool'
+                        link='https://www.notion.so/Link-Social-Product-Case-Study-a650f0b753de4fd6a15950e492fc5faf'/>
+                <ProjectItem
+                        title='Mock User Stories'
+                        description='Mock user stories for a small business directory product'
+                        link='https://drive.google.com/file/d/1tU4JzL_zTSQrqGk9qD9BBeMSllPGWcUM/view?usp=sharing'/>
                     <ProjectItem
                         title='My NBA Teams'
                         description='A web app that uses Next.js, TypeScript, and TailwindCSS that allows a user to view NBA teams, players, and game stats'

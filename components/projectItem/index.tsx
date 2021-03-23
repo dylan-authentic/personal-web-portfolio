@@ -16,7 +16,7 @@ export default function ProjectItem(props: ProjectItemProps) {
             </ProjectItemTop>
             <ProjectItemBottom>
                 {props.link ? <a target='_blank' href={props.link}>🔗 Link</a> : <a target='_blank' href='#'>🔗 (No Link Available)</a>}
-                <a target='_blank' href={props.github}>⌨️ Github</a>
+                {props.github ? <a target='_blank' href={props.github}>⌨️ Github</a> : ''}
             </ProjectItemBottom>
         </ProjectItemWrapper>
     )
