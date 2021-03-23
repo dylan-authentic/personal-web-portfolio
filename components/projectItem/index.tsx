@@ -4,7 +4,7 @@ interface ProjectItemProps {
     title: string
     description: string
     link?: string
-    github: string
+    github?: string
 }
 
 export default function ProjectItem(props: ProjectItemProps) {
