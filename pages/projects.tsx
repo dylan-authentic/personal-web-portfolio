@@ -21,15 +21,15 @@ export default function Projects() {
                         description='Mock user stories for a small business directory product'
                         link='https://drive.google.com/file/d/1tU4JzL_zTSQrqGk9qD9BBeMSllPGWcUM/view?usp=sharing'/>
                     <ProjectItem
-                        title='My NBA Teams'
-                        description='A web app that uses Next.js, TypeScript, and TailwindCSS that allows a user to view NBA teams, players, and game stats'
-                        link='https://my-nba-web-app.vercel.app/'
-                        github='https://github.com/dylan-authentic/my-nba-web-app' />
-                    <ProjectItem
                         title='Automated Data Entry'
                         description='A Node.js script that uses an open-source headless browser to automate data entry from an excel file into a web form'
                         link='https://dylanauthentic.medium.com/how-i-created-a-51-cost-savings-for-my-client-using-simple-browser-automation-fb12052a8ae6'
                         github='https://github.com/dylan-authentic/data-entry-automation' />
+                    <ProjectItem
+                        title='My NBA Teams'
+                        description='A web app that uses Next.js, TypeScript, and TailwindCSS that allows a user to view NBA teams, players, and game stats'
+                        link='https://my-nba-web-app.vercel.app/'
+                        github='https://github.com/dylan-authentic/my-nba-web-app' />
                     <ProjectItem
                         title='Authentic Marketplace'
                         description='A web app that uses React, GraphQL, and AWS to create a shoppable e-commerce marketplace.'
