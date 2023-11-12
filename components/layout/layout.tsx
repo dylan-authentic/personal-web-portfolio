@@ -40,15 +40,15 @@ export default function Layout({
               <Styles.Container>
                 <Styles.Brand>
                   <Link href="/">
-                    <a><h1>☕️ dylan.cafe</h1></a>
+                    <h1>☕️ dylan.cafe</h1>
                   </Link>
                 </Styles.Brand>
                 <Styles.NavMenu>
-                  <Link href='/'><a>Home</a></Link>
-                  <Link href='/bio'><a>My Bio</a></Link>
-                  <Link href='/projects'><a>Projects</a></Link>
-                  <Link href='/articles'><a>Articles</a></Link>
-                  <Link href='/contact'><a>Contact</a></Link>
+                  <Link href='/'>Home</Link>
+                  <Link href='/bio'>My Bio</Link>
+                  <Link href='/projects'>Projects</Link>
+                  <Link href='/articles'>Articles</Link>
+                  <Link href='/contact'>Contact</Link>
                 </Styles.NavMenu>
               </Styles.Container>
             </Styles.NavBarWrapper>
@@ -57,7 +57,7 @@ export default function Layout({
           <Styles.FooterWrapper>
             <Styles.Footer>
               <Link href="/">
-                <a>dylan.cafe</a>
+                dylan.cafe
               </Link>
             </Styles.Footer>
           </Styles.FooterWrapper>

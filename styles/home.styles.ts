@@ -86,7 +86,7 @@ export const CoffeeMug = styled.span`
     }
 `;
   
-export const MenuLink = styled.a`
+export const MenuLink = styled.div`
     padding: 3px 15px;
     color: white;
     font-size: 15px;
