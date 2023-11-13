@@ -31,7 +31,7 @@ export default function Layout({
       <>
         {home ? (
           <Styles.Wrapper>
-            <main>{children}</main>
+            <>{children}</>
           </Styles.Wrapper>
         ) : (
           <>

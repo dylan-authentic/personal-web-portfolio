@@ -1,23 +1,36 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { device } from '../../styles/media-breakpoints';
 
+// Define our horizontal and vertical scroll animations
+const scrollHorizontal = keyframes`
+  from { background-position: 0 0; }
+  to { background-position: 0% 100%; }
+`;
+
+const scrollVertical = keyframes`
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
+`;
+
 const Wrapper = styled.div`
-  height: 90vh;
-  margin: 25px 35px;
-  border: 1px solid black;
-  border-radius: 12px;
+  height: 100vh;
+  width: 100vw;
+  background: 
+    repeating-linear-gradient(0deg, green, green 1px, transparent 1px, transparent 53px),
+    repeating-linear-gradient(90deg, green, green 1px, transparent 1px, transparent 69px),
+    black;
+  background-size: 70px 70px; // Define the size of the squares in the pattern
+  animation: ${scrollHorizontal} 5s linear infinite, ${scrollVertical} 70s linear infinite; // Apply both animations
+  border: solid 10px transparent;
 
   @media ${device.mobileS} {
-    margin: 20px 5px;
-    height: auto;
+    // Your mobileS styles here
   }
   @media ${device.mobileL} {
-    margin: 20px 18px;
-    height: auto;
+    // Your mobileL styles here
   }
   @media ${device.tablet} {
-    margin: 30px 5px;
-    height: 90vh;
+    // Your tablet styles here
   }
 `;
 
@@ -48,7 +61,7 @@ const NavBarWrapper = styled.div`
 const Container = styled.div`
   margin: 0px 55px;
   @media ${device.mobileS} {
-    margin: 0px 10px;
+    margin: 0px;
   }
 `;
 
