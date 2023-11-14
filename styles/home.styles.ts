@@ -18,7 +18,6 @@ const gradient = keyframes`
   
 export const Section = styled.div`
     width: auto;
-    height: 100vh;
     margin-top: 110px;
     text-align: center;
     @media ${device.mobileS} {
@@ -45,17 +44,45 @@ const gradient_secondary = keyframes`
 export const IntroHeader = styled.div`
     display: inline-block;
     padding: 0px 50px 15px 50px;
-    background: 
-    transparent;
+    background: transparent;
     background-size: 400% 400%;
     animation: ${gradient_secondary} 105s ease infinite;
     border-radius: 16px;
     
     h1 {
-        font-family: 'Fraunces', sans-serif;
+        font-family: 'Zillion', sans-serif;
+        color: green;
         font-size: 63px;
-        color: white;
         margin: 20px 0px 10px 0px;
+        // Create a pixelated border using box-shadow
+        border-radius: 1px;
+//   box-shadow:
+//     0 0 0 3px grey, // Top-left pixel
+//     1px 0 0 3px grey, // Top-right pixel
+//     1px 1px 0 3px grey, // Bottom-right pixel
+//     0 1px 0 3px grey, // Bottom-left pixel
+//     -1px 1px 0 3px grey, // and so on, for as many 'pixels' as you want...
+//     -1px 0 0 3px grey,
+//     -1px -1px 0 3px grey,
+//     0 -1px 0 3px grey,
+//     1px -1px 0 3px grey;
+
+  // Repeat the pattern to create a border as wide as you like
+  text-shadow:
+  2px 0 0 #00ff00, // Right
+  3px 0 0 #00ff00,
+  -2px 0 0 #00ff00, // Left
+  -3px 0 0 #00ff00,
+  0 2px 0 #00ff00, // Down
+  0 3px 0 #00ff00,
+  0 -2px 0 #00ff00, // Up
+  0 -3px 0 #00ff00,
+  2px 2px 0 #00ff00, // Diagonal down right
+  2px -2px 0 #00ff00, // Diagonal up right
+  -2px 2px 0 #00ff00, // Diagonal down left
+  -2px -2px 0 #00ff00;
+
+        &:hover {}
     }
 
     img {
@@ -65,8 +92,13 @@ export const IntroHeader = styled.div`
     }
 
     @media ${device.mobileS} {
-        padding: 180px 20px 15px 20px;
-        margin: 0px 18px;
+        padding: 180px 0px 15px 0px;
+        h1 {
+            font-size: 23px;
+        }
+    }
+    @media ${device.mobileM} {
+        padding: 180px 0px 15px 0px;
         h1 {
             font-size: 28px;
         }
@@ -162,20 +194,21 @@ export const RetroBackground = styled.div`
 `;
 
 export const RetroButton = styled.button`
-  background-color: #FF00FF; // Bright, contrasting color
-  border: none;
-  color: white;
+  background: #008000; // Light green
+  border: 3px solid grey; // Darker green for border
+  color: #00ff00; // Text color for contrast
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: 'Zillion', sans-serif;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
   box-shadow: 0 9px #999;
-  &:hover { background-color: #DD00DD }
+  &:hover { background-color: #ffff00; color: black;}
   &:active {
-    background-color: #DD00DD;
+    background-color: #ffff00;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
@@ -209,5 +242,76 @@ export const OptionsButton = styled.button`
   @media (max-width: 768px) {
     font-size: 0.8rem;
     padding: 8px 16px;
+  }
+`;
+
+export const RacewayContainer = styled.div`
+  position: absolute;
+  top:55%;
+  left: 0;
+  right: 0;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  background: #000; // A dark background often suits retro styles
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); // Optional: Adds a slight shadow for depth
+  border: 4px solid #333; // Adds a solid border for a pixelated look
+  image-rendering: pixelated; // Ensures any images inside are rendered in a pixelated style
+`;
+
+// Grass with pixelated effect using CSS gradients
+export const Grass = styled.div`
+  width: 45%;
+  background: repeating-linear-gradient(
+    45deg,
+    #4C9A2A,
+    #4C9A2A 1px,
+    #397f22 1px,
+    #397f22 2px
+  ); // Creates a 2x2 pixel pattern
+`;
+
+// Road with a similar pixelated effect
+export const Road = styled.div`
+  width: 10%;
+  background: repeating-linear-gradient(
+    45deg,
+    #707070,
+    #707070 1px,
+    #585858 1px,
+    #585858 2px
+  ); // Creates a 2x2 pixel pattern
+  position: relative;
+`;
+
+// Borders using box-shadow for pixel effect
+export const Border = styled.div`
+  height: 100%;
+  width: 5%;
+  background-color: ${props => props.color};
+  box-shadow: 0 0 0 1px ${props => props.color}; // Simulates pixelated border
+  position: absolute;
+  top: 0;
+  ${props => props.left ? 'left: 0;' : 'right: 0;'}
+`;
+
+// Lane lines using pseudo-elements
+export const LaneLine = styled.div`
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 2px;
+    background: white;
+    box-shadow: 0 12px white, 0 24px white, 0 36px white, 0 48px white; // Adjust as needed
   }
 `;

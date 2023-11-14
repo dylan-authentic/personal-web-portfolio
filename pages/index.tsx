@@ -1,7 +1,22 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout/layout';
-import { Section, IntroHeader, CoffeeMug, MenuLink, IntroContent, LinkBox, RetroButton, RetroBackground, OptionsButton } from '../styles/home.styles';
+import { Section, IntroHeader, CoffeeMug, MenuLink, IntroContent, LinkBox, RetroButton, RetroBackground, OptionsButton, RacewayContainer, Grass, Road, Border, LaneLine } from '../styles/home.styles';
+
+// Assemble the scene
+const RacewayScene = () => {
+  return (
+    <RacewayContainer>
+      <Grass />
+      <Road>
+        <Border color="white" left /> {/* Left border */}
+        <Border color="white" /> {/* Right border */}
+        <LaneLine />
+      </Road>
+      <Grass />
+    </RacewayContainer>
+  )
+}
 
 export default function Home() {
   return (
@@ -12,16 +27,17 @@ export default function Home() {
       <RetroBackground>
         <Section>
           <IntroHeader>
-            <img src="/images/firstlogo-1 copy.png" />
+            <h1>DYLAN.ENGINEERING</h1>
           </IntroHeader>
           <IntroContent>
-            <RetroButton>🏎️ START HERE 🏎️</RetroButton>
+            <RetroButton>🏎️ PRESS START 🏎️</RetroButton>
             <br/>
             <br/>
             <RetroButton>⚙️ OTHER OPTIONS ⚙️</RetroButton>
           </IntroContent>
         </Section>
       </RetroBackground>
+      {/* <RacewayScene /> */}
     </Layout>
   )
 }
