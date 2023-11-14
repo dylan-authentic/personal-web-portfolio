@@ -40,7 +40,7 @@ export default function Layout({
               <Styles.Container>
                 <Styles.Brand>
                   <Link href="/">
-                    <h1>☕️ dylan.cafe</h1>
+                    <h1><span style={{textShadow: 'initial'}}>🏗</span> dylan.engineering</h1>
                   </Link>
                 </Styles.Brand>
                 <Styles.NavMenu>

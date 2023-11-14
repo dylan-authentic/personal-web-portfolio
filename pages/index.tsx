@@ -30,7 +30,9 @@ export default function Home() {
             <h1>DYLAN.ENGINEERING</h1>
           </IntroHeader>
           <IntroContent>
-            <RetroButton>🏎️ PRESS START 🏎️</RetroButton>
+            <Link href='/bio' passHref>
+              <RetroButton>🏎️ PRESS START 🏎️</RetroButton>
+            </Link>
             <br/>
             <br/>
             <RetroButton>⚙️ OTHER OPTIONS ⚙️</RetroButton>

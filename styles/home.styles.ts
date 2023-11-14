@@ -193,7 +193,7 @@ export const RetroBackground = styled.div`
   animation: ${pixelArtAnimation} 30s linear infinite;
 `;
 
-export const RetroButton = styled.button`
+export const RetroButton = styled.a`
   background: #008000; // Light green
   border: 3px solid grey; // Darker green for border
   color: #00ff00; // Text color for contrast

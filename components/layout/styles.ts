@@ -71,9 +71,24 @@ const Brand = styled.div`
     text-decoration: none;
   }
   h1 {
+    font-size: 24px;
     margin: 0px;
-    font-family: 'Fraunces', sans-serif;
-    color: white;
+    font-family: 'Zillion', sans-serif;
+    text-transform: uppercase;
+    color: green;
+    text-shadow:
+  2px 0 0 #00ff00, // Right
+  3px 0 0 #00ff00,
+  -2px 0 0 #00ff00, // Left
+  -3px 0 0 #00ff00,
+  0 2px 0 #00ff00, // Down
+  0 3px 0 #00ff00,
+  0 -2px 0 #00ff00, // Up
+  0 -3px 0 #00ff00,
+  2px 2px 0 #00ff00, // Diagonal down right
+  2px -2px 0 #00ff00, // Diagonal up right
+  -2px 2px 0 #00ff00, // Diagonal down left
+  -2px -2px 0 #00ff00;
   }
 `;
 
