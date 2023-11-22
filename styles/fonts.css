@@ -4,3 +4,17 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Kanit';
+    src: url('/fonts/Kanit-LightItalic.ttf') format('truetype');
+    font-weight: bolditalic;
+    font-style: bolditalic;
+  }
+
+  @font-face {
+    font-family: 'PressStart2P';
+    src: url('/fonts/PressStart2P.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

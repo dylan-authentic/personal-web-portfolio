@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Styles } from './styles'
 import Link from 'next/link'
 
-export const siteTitle = '☕️ dylan.cafe'
+export const siteTitle = 'dylan.engineering'
 
 export default function Layout({
   children,
@@ -40,7 +40,7 @@ export default function Layout({
               <Styles.Container>
                 <Styles.Brand>
                   <Link href="/">
-                    <h1><span style={{textShadow: 'initial'}}>🏗</span> dylan.engineering</h1>
+                    <h1><span style={{textShadow: 'initial'}}>🏗</span> dylan.engineering <span style={{textShadow: 'initial'}}>🏗</span></h1>
                   </Link>
                 </Styles.Brand>
                 <Styles.NavMenu>
@@ -57,7 +57,7 @@ export default function Layout({
           <Styles.FooterWrapper>
             <Styles.Footer>
               <Link href="/">
-                dylan.cafe
+                dylan.engineering
               </Link>
             </Styles.Footer>
           </Styles.FooterWrapper>

@@ -6,7 +6,7 @@ export default function AboutMe() {
     return (
         <Layout>
             <Head>
-                <title>My Bio | {siteTitle}</title>
+                <title>"My Bio | " + {siteTitle}</title>
             </Head>
             <Wrapper>
                 <div className="container">

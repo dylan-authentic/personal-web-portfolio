@@ -25,13 +25,13 @@ export const Section = styled.div`
         margin-top: 0px;
     }
     @media ${device.tablet} {
-        padding: 80px 0px;
+        padding: 0px 0px;
     }
     @media ${device.laptop} {
-        padding: 80px 0px;
+        padding: 00px 0px;
     }
     @media ${device.laptopL} {
-        padding: 120px 0px;
+        padding: 90px 0px;
     }
 `;
   
@@ -49,23 +49,41 @@ export const IntroHeader = styled.div`
     animation: ${gradient_secondary} 105s ease infinite;
     border-radius: 16px;
     
+    h3 {
+      color: #00ff00;
+      // &:hover { background-color: #999; color: black; }
+      border: 2px solid #00ff00; // Adjust as needed
+    border-radius: 50px; // Adjust as needed
+    padding: 5px 30px; // Adjust as needed
+    box-shadow: 0 9px #00ff00;
+    //     text-shadow:
+  // 2px 0 0 #00ff00, // Right
+  // 3px 0 0 #00ff00,
+  // -2px 0 0 #00ff00, // Left
+  // -3px 0 0 #00ff00,
+  // 0 2px 0 #00ff00, // Down
+  // 0 3px 0 #00ff00,
+  // 0 -2px 0 #00ff00, // Up
+  // 0 -3px 0 #00ff00,
+  // 2px 2px 0 #00ff00, // Diagonal down right
+  // 2px -2px 0 #00ff00, // Diagonal up right
+  // -2px 2px 0 #00ff00, // Diagonal down left
+  // -2px -2px 0 #00ff00;
+  font-family: 'PressStart2P', sans-serif;
+  font-weight: bolditalic;
+  font-size: 20px;
+  // padding: 0px 220px;
+  margin:0px;
+  margin-bottom: 19px;
+
+  }
     h1 {
-        font-family: 'Zillion', sans-serif;
+        font-family: 'PressStart2P', sans-serif;
         color: green;
         font-size: 63px;
-        margin: 20px 0px 10px 0px;
+        margin: 0px 0px 10px 0px;
         // Create a pixelated border using box-shadow
         border-radius: 1px;
-//   box-shadow:
-//     0 0 0 3px grey, // Top-left pixel
-//     1px 0 0 3px grey, // Top-right pixel
-//     1px 1px 0 3px grey, // Bottom-right pixel
-//     0 1px 0 3px grey, // Bottom-left pixel
-//     -1px 1px 0 3px grey, // and so on, for as many 'pixels' as you want...
-//     -1px 0 0 3px grey,
-//     -1px -1px 0 3px grey,
-//     0 -1px 0 3px grey,
-//     1px -1px 0 3px grey;
 
   // Repeat the pattern to create a border as wide as you like
   text-shadow:
@@ -98,7 +116,7 @@ export const IntroHeader = styled.div`
         }
     }
     @media ${device.mobileM} {
-        padding: 180px 0px 15px 0px;
+        padding: 10px 0px 15px 0px;
         h1 {
             font-size: 28px;
         }
@@ -194,19 +212,20 @@ export const RetroBackground = styled.div`
 `;
 
 export const RetroButton = styled.a`
-  background: #008000; // Light green
+  background: green; // Light green
   border: 3px solid grey; // Darker green for border
+  border-radius: 16px;
   color: #00ff00; // Text color for contrast
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: 'Zillion', sans-serif;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-family: 'PressStart2P', sans-serif;
+  font-size: 14px;
+  margin: 0px 2px;
   cursor: pointer;
   box-shadow: 0 9px #999;
-  &:hover { background-color: #ffff00; color: black;}
+  &:hover { background-color: #999; color: black;}
   &:active {
     background-color: #ffff00;
     box-shadow: 0 5px #666;
@@ -215,10 +234,10 @@ export const RetroButton = styled.a`
 `;
 
 export const OptionsButton = styled.button`
-  background-color: #00A0FF; // Choose a bright retro color
+  background-color: grey; // Choose a bright retro color
   color: white;
   border: 2px solid #FFF; // White border for the retro arcade look
-  font-family: 'Press Start 2P', cursive; // Retro, pixelated font
+  font-family: 'PressStart2P', cursive; // Retro, pixelated font
   font-size: 1rem;
   padding: 10px 20px;
   cursor: pointer;
@@ -314,4 +333,29 @@ export const LaneLine = styled.div`
     background: white;
     box-shadow: 0 12px white, 0 24px white, 0 36px white, 0 48px white; // Adjust as needed
   }
+`;
+
+export const FixedImage = styled.img`
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: 42%;
+    width: 100vw;
+    z-index: 999;
+`;
+
+export const GlassCard = styled.div`
+    background: rgba(255, 255, 255, 0.2); // Semi-transparent white
+    border-radius: 15px; // Round edges
+    margin: 20px 40px 0px 40px; // Adjust the margin as per your requirement
+    padding: 20px; // Or any other padding you prefer
+    backdrop-filter: blur(4px); // This creates the frosted glass effect
+    -webkit-backdrop-filter: blur(10px); // For Safari browser support
+    border: 1px solid rgba(255, 255, 255, 0.3); // Optional: adds a light border
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Soft shadow for depth
+    max-width: calc(100% - 80px); // Adjusts width with respect to margin
+    box-sizing: border-box; // Ensures padding doesn't affect overall width
+    height: 90vh;
 `;

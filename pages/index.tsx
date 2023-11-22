@@ -1,45 +1,50 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout/layout';
-import { Section, IntroHeader, CoffeeMug, MenuLink, IntroContent, LinkBox, RetroButton, RetroBackground, OptionsButton, RacewayContainer, Grass, Road, Border, LaneLine } from '../styles/home.styles';
+import { GlassCard, Section, IntroHeader, CoffeeMug, MenuLink, IntroContent, LinkBox, RetroButton, RetroBackground, OptionsButton, RacewayContainer, Grass, Road, Border, LaneLine, FixedImage } from '../styles/home.styles';
 
-// Assemble the scene
-const RacewayScene = () => {
-  return (
-    <RacewayContainer>
-      <Grass />
-      <Road>
-        <Border color="white" left /> {/* Left border */}
-        <Border color="white" /> {/* Right border */}
-        <LaneLine />
-      </Road>
-      <Grass />
-    </RacewayContainer>
-  )
-}
+const playSound = (soundUrl) => {
+  const audio = new Audio(soundUrl);
+  audio.play();
+};
 
 export default function Home() {
+  // useEffect(() => {
+  //   if (typeof window !== undefined) {
+  //     // playSound('/sounds/intro-music.wav');
+  //   }
+  // }, []);
+
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <RetroBackground>
-        <Section>
-          <IntroHeader>
-            <h1>DYLAN.ENGINEERING</h1>
-          </IntroHeader>
-          <IntroContent>
-            <Link href='/bio' passHref>
-              <RetroButton>🏎️ PRESS START 🏎️</RetroButton>
-            </Link>
-            <br/>
-            <br/>
-            <RetroButton>⚙️ OTHER OPTIONS ⚙️</RetroButton>
-          </IntroContent>
-        </Section>
+        <GlassCard>
+          <Section>
+            <IntroHeader>
+              <h1>🗽🏎️</h1>
+              <h1>DYLAN.ENGINEERING</h1>
+              <h3>Critical Problem-Solving + Execution</h3>
+            </IntroHeader>
+            <IntroContent>
+              <Link href='/bio' passHref>
+                <RetroButton>&gt; START HERE &lt;</RetroButton>
+              </Link>
+              <br/>
+              <br/>
+              <Link href='/bio' passHref>
+                <RetroButton>&gt; START SOMEWHERE ELSE &lt;</RetroButton>
+              </Link>
+            </IntroContent>
+          </Section>
+        </GlassCard>
       </RetroBackground>
       {/* <RacewayScene /> */}
     </Layout>
   )
 }
+
+{/* <span style={{textShadow: 'initial',fontSize:'40px'}}>🏗</span>  */}

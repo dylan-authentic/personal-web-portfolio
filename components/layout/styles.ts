@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     repeating-linear-gradient(90deg, green, green 1px, transparent 1px, transparent 69px),
     black;
   background-size: 70px 70px; // Define the size of the squares in the pattern
-  animation: ${scrollHorizontal} 5s linear infinite, ${scrollVertical} 70s linear infinite; // Apply both animations
+  animation: ${scrollHorizontal} 5s linear infinite, ${scrollVertical} 35s linear infinite; // Apply both animations
   border: solid 10px transparent;
 
   @media ${device.mobileS} {
