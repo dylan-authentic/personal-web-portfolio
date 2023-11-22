@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Styles } from './styles'
 import Link from 'next/link'
 
-export const siteTitle = 'dylan.engineering'
+export const siteTitle = '⚡ Dylan.Engineering'
 
 export default function Layout({
   children,
@@ -17,7 +17,7 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="www.dylan.engineering"
         />
         <meta
           property="og:image"
