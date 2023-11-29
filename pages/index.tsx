@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout/layout';
-import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, RetroButton, RetroBackground } from '../styles/home.styles';
+import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, RetroButton } from '../styles/home.styles';
 
 // const playSound = (soundUrl) => {
 //   const audio = new Audio(soundUrl);
@@ -21,14 +21,13 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <RetroBackground>
         <GlassCardContainer>
           <GlassCard>
             <Section>
               <IntroHeader>
                 <p>🗽🏎️</p>
                 <h1>DYLAN.ENGINEERING</h1>
-                <h3>Critical Problem-Solving + Execution</h3>
+                <h3>Creative Problem-Solving + Execution</h3>
               </IntroHeader>
               <IntroContent>
                 <Link href='/bio' passHref>
@@ -43,7 +42,6 @@ export default function Home() {
             </Section>
           </GlassCard>
         </GlassCardContainer>
-      </RetroBackground>
     </Layout>
   )
 }
