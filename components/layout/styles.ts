@@ -17,13 +17,14 @@ const Wrapper = styled.div`
     background: repeating-linear-gradient(0deg, green, green 1px, transparent 1px, transparent 53px),
                 repeating-linear-gradient(90deg, green, green 1px, transparent 1px, transparent 69px),
                 black;
-    background-size: 70px 70px;
+    background-size: 70px 70px; // impacts the lines moving somehow
     animation: ${scrollHorizontal} 5s linear infinite, ${scrollVertical} 35s linear infinite;
-    // border: solid 10px transparent;
+    border: solid 10px transparent;
 
-    @media ${device.mobileS} {
-     
-    }
+    // @media ${device.mobileS} {
+    //   margin: 0px;
+    //   padding: 0px;
+    // }
     @media ${device.mobileL} {
       // Your mobileL styles here
     }
