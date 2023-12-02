@@ -51,19 +51,19 @@ export default function Home() {
                   </IntroHeader>
                   <IntroContent>
                     {/* <Link href='/bio' passHref> */}
-                      <RetroButton onClick={handleStartClick}>&gt; START HERE &lt;</RetroButton>
+                      <RetroButton onClick={handleStartClick}>&gt; PRESS START &lt;</RetroButton>
                     {/* </Link> */}
-                    {showTransition && (
-                      <TransitionScreen>
-                        <h1>Loading...</h1> {/* Or any other creative content */}
-                      </TransitionScreen>
-                    )}
                     <br/>
                     <br/>
-                    <RetroButton onClick={() => setShowMenu(true)}>&gt; START SOMEWHERE ELSE &lt;</RetroButton>
+                    <RetroButton onClick={() => setShowMenu(true)}>&gt; MAIN MENU &lt;</RetroButton>
                   </IntroContent>
                 </>
                 )}
+                {showTransition && (
+                      <TransitionScreen>
+                        <h1>Loading<span>.</span><span>.</span><span>.</span></h1>
+                      </TransitionScreen>
+                    )}
                 {showMenu && (
                   <MainMenuOverlay>
                      <IntroHeader>
@@ -80,12 +80,9 @@ export default function Home() {
                     <div className="home-button" onClick={() => setShowMenu(false)}>&lt; Back</div>
                   </MainMenuOverlay>
                 )}
-              
             </Section>
           </GlassCard>
         </GlassCardContainer>
     </Layout>
   )
 }
-
-{/* <span style={{textShadow: 'initial',fontSize:'40px'}}>🏗</span>  */}

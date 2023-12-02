@@ -25,6 +25,7 @@ export const GlassCard = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.3); // Optional: adds a light border
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Soft shadow for depth
     box-sizing: border-box; // Ensures padding doesn't affect overall width
+    position: relative;
 
     @media ${device.mobileS} {
       // ADJUST SIZING BELOW
@@ -349,6 +350,49 @@ export const MainMenuOverlay = styled.div`
         -2px 2px 0 #00ff00, // Diagonal down left
         -2px -2px 0 #00ff00;
   }
+
+  @media ${device.mobileS} {
+    h1 {
+      font-size: 14px; // Smaller font size for mobile devices
+    }
+    h2 {
+      font-size: 16px;
+    }
+    li {
+      font-size: 12px;
+    }
+    .home-button {
+      font-size: 14px;
+    }
+  }
+
+  @media ${device.tablet} {
+    h1 {
+      font-size: 24px; // Slightly larger for tablets
+    }
+    h2 {
+      font-size: 20px;
+    }
+    li {
+      font-size: 15px;
+    }
+  }
+  @media ${device.laptop} {
+    h1 {
+      font-size: 28px;
+    }
+    li {
+      font-size: 20px;
+    }
+  }
+  @media ${device.laptop} {
+    h1 {
+      font-size: 28px;
+    }
+    li {
+      font-size: 24px;
+    }
+  }
 `;
 
 const fadeIn = keyframes`
@@ -361,8 +405,17 @@ const fadeOut = keyframes`
   to { opacity: 0; }
 `;
 
+const blink = keyframes`
+  0%, 100% {
+    opacity: 1; // Fully visible
+  }
+  50% {
+    opacity: 0; // Fully invisible
+  }
+`;
+
 export const TransitionScreen = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -387,5 +440,21 @@ export const TransitionScreen = styled.div`
     color: white;
     font-size: 2em;
     font-family: 'PressStart2P', sans-serif;
+  }
+
+  h1 span {
+    animation: ${blink} 1s infinite;
+  }
+
+  @media ${device.mobileS} {
+    h1 {
+      font-size: 1.5em; // Adjust font size for smaller screens
+    }
+  }
+
+  @media ${device.tablet} {
+    h1 {
+      font-size: 2em; // Adjust for tablet screens
+    }
   }
 `;
