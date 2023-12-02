@@ -20,7 +20,7 @@ export default function Home() {
     setShowTransition(true);
     setTimeout(() => {
       router.push(`/bio`); // Replace with your target path
-    }, 3000); // Adjust timing based on your animation
+    }, 1000); // Adjust timing based on your animation
   };
 
 
@@ -72,10 +72,10 @@ export default function Home() {
                       <h3>Main Menu</h3>
                     </IntroHeader>
                     <ul>
-                      <li><Link href='/about'>About Me</Link></li>
+                      <li><Link href='/bio'>About Me</Link></li>
                       <li><Link href='/projects'>Projects + Ventures</Link></li>
-                      <li><Link href='/insights'>Insights</Link></li>
-                      <li><Link href='/hire'>Hire Me</Link></li>
+                      <li><Link href='/articles'>Insights</Link></li>
+                      <li><Link href='/contact'>Hire Me</Link></li>
                     </ul>
                     <div className="home-button" onClick={() => setShowMenu(false)}>&lt; Back</div>
                   </MainMenuOverlay>
