@@ -134,10 +134,10 @@ export const IntroHeader = styled.div`
     }
     @media ${device.mobileL} {
       h1 {
-          font-size: 20px;
+          font-size: 18px;
       }
       h3 {
-          font-size: 11.5px;
+          font-size: 10px;
           padding: 8px;
           margin: 16px 10px;
       }
@@ -172,6 +172,7 @@ export const IntroHeader = styled.div`
 `;
   
 export const IntroContent = styled.div`
+    position: relative;
     text-align: center;
     font-family: 'Inconsolata', sans-serif;
     font-size: 18px;
@@ -242,9 +243,149 @@ export const RetroButton = styled.a`
       font-size: 11px;
     }
     @media ${device.mobileL} {
-      font-size: 12px;
+      font-size: 10px;
     }
     @media ${device.desktop} {
       font-size: 20px;
     }
+`;
+
+export const DropdownMenu = styled.div`
+  display: ${props => props.isOpen ? 'block' : 'none'};
+  position: absolute;
+  left: 50%; // Center horizontally relative to the parent
+  transform: translateX(-50%); // Adjust for the exact center
+  background-color: #f9f9f9; // Adjust according to your theme
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 16px;
+  font-family: 'PressStart2P', sans-serif;
+
+  a {
+    color: green;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+`;
+
+export const MainMenuOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background: rgba(255, 255, 255, 0.3); // Adjust for your theme
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  // backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 2; // Ensure it's above the GlassCard
+  color: green;
+  
+
+  h1 {
+    font-family: 'PressStart2P', sans-serif;
+    color: green;
+    font-size: 32px; // Smaller than the main header
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin: 10px 0;
+    font-family: 'PressStart2P', sans-serif;
+    color: green;
+    text-shadow:
+        2px 0 0 #00ff00, // Right
+        3px 0 0 #00ff00,
+        -2px 0 0 #00ff00, // Left
+        -3px 0 0 #00ff00,
+        0 2px 0 #00ff00, // Down
+        0 3px 0 #00ff00,
+        0 -2px 0 #00ff00, // Up
+        0 -3px 0 #00ff00,
+        2px 2px 0 #00ff00, // Diagonal down right
+        2px -2px 0 #00ff00, // Diagonal up right
+        -2px 2px 0 #00ff00, // Diagonal down left
+        -2px -2px 0 #00ff00;
+  }
+
+  .home-button {
+    font-family: 'PressStart2P', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-shadow:
+        2px 0 0 #00ff00, // Right
+        3px 0 0 #00ff00,
+        -2px 0 0 #00ff00, // Left
+        -3px 0 0 #00ff00,
+        0 2px 0 #00ff00, // Down
+        0 3px 0 #00ff00,
+        0 -2px 0 #00ff00, // Up
+        0 -3px 0 #00ff00,
+        2px 2px 0 #00ff00, // Diagonal down right
+        2px -2px 0 #00ff00, // Diagonal up right
+        -2px 2px 0 #00ff00, // Diagonal down left
+        -2px -2px 0 #00ff00;
+  }
+`;
+
+const fadeIn = keyframes`
+  from { opacity: 0; }
+  to { opacity: 1; }
+`;
+
+const fadeOut = keyframes`
+  from { opacity: 1; }
+  to { opacity: 0; }
+`;
+
+export const TransitionScreen = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black; // or any other creative background
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: ${fadeIn} .2s ease forwards;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.2); // Semi-transparent white
+  background: black; // or any other creative background
+
+  border-radius: 15px; // Round edges
+  backdrop-filter: blur(4px); // This creates the frosted glass effect
+  -webkit-backdrop-filter: blur(10px); // For Safari browser support
+  border: 1px solid rgba(255, 255, 255, 0.3); // Optional: adds a light border
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Soft shadow for depth
+  box-sizing: border-box; // Ensures padding doesn't affect overall width
+
+  h1 {
+    color: white;
+    font-size: 2em;
+    font-family: 'PressStart2P', sans-serif;
+  }
 `;
