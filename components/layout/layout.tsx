@@ -6,10 +6,12 @@ export const siteTitle = '⚡ Dylan.Engineering'
 
 export default function Layout({
   children,
-  home 
+  home,
+  showNavbar
 }: {
   children: React.ReactNode
-  home?: boolean
+  home?: boolean,
+  showNavbar?: boolean
 }) {
   return (
     <Styles.Container>
@@ -29,26 +31,26 @@ export default function Layout({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <>
-        {home ? (
+        {(home || !showNavbar) ? (
           <Styles.Wrapper>
             <>{children}</>
           </Styles.Wrapper>
         ) : (
-          <>
+          <Styles.Wrapper>
           <Styles.NavBar>
             <Styles.NavBarWrapper>
               <Styles.Container>
                 <Styles.Brand>
                   <Link href="/">
-                    <h1><span style={{textShadow: 'initial'}}>🏗</span> dylan.engineering <span style={{textShadow: 'initial'}}>🏗</span></h1>
+                    <h1>🗽🏎️ dylan.engineering </h1>
                   </Link>
                 </Styles.Brand>
                 <Styles.NavMenu>
                   <Link href='/'>Home</Link>
-                  <Link href='/bio'>My Bio</Link>
-                  <Link href='/projects'>Projects</Link>
-                  <Link href='/articles'>Articles</Link>
-                  <Link href='/contact'>Contact</Link>
+                  <Link href='/about'>About Me</Link>
+                  <Link href='/projects'>Projects + Ventures</Link>
+                  <Link href='/insights'>Insights</Link>
+                  <Link href='/hire'>Hire Me</Link>
                 </Styles.NavMenu>
               </Styles.Container>
             </Styles.NavBarWrapper>
@@ -57,13 +59,15 @@ export default function Layout({
           <Styles.FooterWrapper>
             <Styles.Footer>
               <Link href="/">
-                dylan.engineering
+                &lt; back to start
               </Link>
             </Styles.Footer>
           </Styles.FooterWrapper>
-          </>
+          </Styles.Wrapper>
         )}
       </>
     </Styles.Container>
   )
 }
+
+{/* <span style={{textShadow: 'initial'}}>🏗</span> */}

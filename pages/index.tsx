@@ -22,9 +22,9 @@ export default function Home() {
     setTimeout(() => {
       setShowFullScreenFadeIn(true); // Activate the full-screen overlay
       setTimeout(() => {
-        router.push(`/bio`); // Navigate after the fade-out completes
+        router.push(`/about?nav=0`); // Navigate after the fade-out completes
       }, 500); // Duration of the fade-out animation
-    }, 1200); // Adjust timing based on your animation
+    }, 800); // Adjust timing based on your animation
   };
   
   // useEffect(() => {
@@ -72,10 +72,10 @@ export default function Home() {
                         <h3>Main Menu</h3>
                       </IntroHeader>
                       <ul>
-                        <li><Link href='/bio'>About Me</Link></li>
+                        <li><Link href='/about?nav=1'>About Me</Link></li>
                         <li><Link href='/projects'>Projects + Ventures</Link></li>
-                        <li><Link href='/articles'>Insights</Link></li>
-                        <li><Link href='/contact'>Hire Me</Link></li>
+                        <li><Link href='/insights'>Insights</Link></li>
+                        <li><Link href='/hire'>Hire Me</Link></li>
                       </ul>
                       <div className="home-button" onClick={() => setShowMenu(false)}>&lt; Back</div>
                     </MainMenuOverlay>

@@ -32,28 +32,28 @@ export const LinkWrapper = styled.div`
 export const ContentWrapper = styled.div`
     padding: 20px 50px;
     margin: 15px 155px 0px 155px; 
-    border: 1px solid #1d1d1d;
+    border: 1px solid #00ff00;
     border-radius: 12px;
+    color: white;
+    font-family: 'PressStart2P', sans-serif;
 
     h1 {
         margin: 0px;
-    }
-
-    p {
-        font-family: 'Inconsolata', sans-serif;
+        color: white;
+        font-family: 'PressStart2P', sans-serif;
     }
 
     @media ${device.mobileS} {
         margin: 8px 10px 25px 10px;
         padding: 16px 33px;
         p {
-            font-size: 15px;
+            font-size: 12px;
         }
     }
     @media ${device.tablet} {
         margin: 8px 55px 25px 55px;
         p {
-            font-size: 17px;
+            font-size: 14px;
         }
     }
     @media ${device.laptop} {

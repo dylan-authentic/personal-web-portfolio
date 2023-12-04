@@ -48,7 +48,7 @@ const NavBarWrapper = styled.div`
     @media ${device.mobileS} {
       margin: 0px 8px;
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
       text-align: left;
       padding: 20px;
     }
@@ -72,9 +72,9 @@ const Brand = styled.div`
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 15px;
     margin: 0px;
-    font-family: 'Zillion', sans-serif;
+    font-family: 'PressStart2P', sans-serif;
     text-transform: uppercase;
     color: green;
     text-shadow:
@@ -95,25 +95,26 @@ const Brand = styled.div`
 
 const NavMenu = styled.div`
     float: right;
-    padding-top: 15px;
+    // padding-top: 15px;
 
     a {
       color:white;
       padding: 0px 12px;
-      font-family: 'Inconsolata', sans-serif;
+      font-family: 'PressStart2P', sans-serif;
+      font-size: 12px;
     }
     
     @media ${device.mobileS} {
       float: none;
       text-align: center;
-      padding-top: 8px;
+      // padding-top: 8px;
       a {
         display: inline-block;
       }
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
       float: right;
-      padding-top: 15px;
+      // padding-top: 15px;
     }
 `;
 
@@ -125,7 +126,7 @@ const Footer = styled.div`
     display: inline-block;
     text-align: center;
     color: white;
-    background-color: #2C5364;
+    // background-color: #2C5364;
     margin-bottom: 15px;
     border-radius: 20px;
     padding: 5px 18px;
@@ -135,10 +136,27 @@ const Footer = styled.div`
     }
 
     a {
-      margin: 0px;
-      color: white;
-      font-family: 'Fraunces', sans-serif;
-      font-weight: 700;
+      // margin: 0px;
+      color: green;
+      // font-family: 'Fraunces', sans-serif;
+      // font-weight: 700;
+      font-family: 'PressStart2P', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-shadow:
+        2px 0 0 #00ff00, // Right
+        3px 0 0 #00ff00,
+        -2px 0 0 #00ff00, // Left
+        -3px 0 0 #00ff00,
+        0 2px 0 #00ff00, // Down
+        0 3px 0 #00ff00,
+        0 -2px 0 #00ff00, // Up
+        0 -3px 0 #00ff00,
+        2px 2px 0 #00ff00, // Diagonal down right
+        2px -2px 0 #00ff00, // Diagonal up right
+        -2px 2px 0 #00ff00, // Diagonal down left
+        -2px -2px 0 #00ff00;
     }
 `;
 

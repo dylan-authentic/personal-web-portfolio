@@ -227,12 +227,13 @@ export const RetroButton = styled.a`
     box-shadow: 0 9px #999;
 
     &:hover { 
-      background-color: #999; 
-      color: black;
+      background-color: black; 
+      color: #00ff00;
+      text-decoration: none;
     }
     
     &:active {
-      background-color: #ffff00;
+      background-color: black;
       box-shadow: 0 5px #666;
       transform: translateY(4px);
     }
@@ -329,6 +330,11 @@ export const MainMenuOverlay = styled.div`
         2px -2px 0 #00ff00, // Diagonal up right
         -2px 2px 0 #00ff00, // Diagonal down left
         -2px -2px 0 #00ff00;
+
+        a {
+          color: green;
+          
+        }
   }
 
   .home-button {
@@ -469,6 +475,6 @@ export const FullScreenFadeIn = styled.div`
   height: 100vh; // Covers full viewport height
   width: 100vw; // Covers full viewport width
   opacity: 0; // Start invisible if using fadeIn
-  animation: ${fadeIn} 0.3s ease forwards;
+  animation: ${fadeIn} 0.2s ease forwards;
   z-index: 1000000000;
 `;
