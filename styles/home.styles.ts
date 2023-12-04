@@ -425,6 +425,7 @@ export const TransitionScreen = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${fadeIn} .2s ease forwards;
+  // animation: ${fadeIn} .2s ease forwards;
   z-index: 10;
   background: rgba(255, 255, 255, 0.2); // Semi-transparent white
   background: black; // or any other creative background
@@ -457,4 +458,17 @@ export const TransitionScreen = styled.div`
       font-size: 2em; // Adjust for tablet screens
     }
   }
+`;
+
+export const FullScreenFadeIn = styled.div`
+  display: block;
+  position: fixed; // Covers the entire viewport
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100vh; // Covers full viewport height
+  width: 100vw; // Covers full viewport width
+  opacity: 0; // Start invisible if using fadeIn
+  animation: ${fadeIn} 0.3s ease forwards;
+  z-index: 1000000000;
 `;
