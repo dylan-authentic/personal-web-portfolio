@@ -1,10 +1,13 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Layout, {siteTitle} from "../components/layout/layout";
 import { ContactWrapper, LinkWrapper, SectionPressed } from '../styles/contact.styles';
 
 export default function TestPost() {
+    const router = useRouter();
+    const showNavbarParam = router.query.nav=== '1' ? true: false;
     return (
-        <Layout>
+        <Layout showNavbar={showNavbarParam}>
             <Head>
                 <title>Contact Me | {siteTitle}</title>
             </Head>

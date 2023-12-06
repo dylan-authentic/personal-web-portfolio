@@ -12,6 +12,7 @@ import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, Retr
 
 export default function Home() {
   const router = useRouter();
+  const menuParameter = router.query.menu === 'main' ? true: undefined;
 
   const [showMenu, setShowMenu] = useState(false);
   const [showFullScreenFadeIn, setShowFullScreenFadeIn] = useState(false);
@@ -27,11 +28,17 @@ export default function Home() {
     }, 800); // Adjust timing based on your animation
   };
   
-  // useEffect(() => {
-  //   if (typeof window !== undefined) {
-  //     // playSound('/sounds/intro-music.wav');
-  //   }
-  // }, []);
+  const handleBackClick =() => {
+    setShowMenu(false);
+    router.replace(router.pathname);
+  }
+
+  useEffect(() => {
+    if(menuParameter) setShowMenu(true);
+    // if (typeof window !== undefined) {
+    //   // playSound('/sounds/intro-music.wav');
+    // }
+  }, []);
 
   return (
     <Layout home>
@@ -73,11 +80,11 @@ export default function Home() {
                       </IntroHeader>
                       <ul>
                         <li><Link href='/about?nav=1'>About Me</Link></li>
-                        <li><Link href='/projects'>Projects + Ventures</Link></li>
-                        <li><Link href='/insights'>Insights</Link></li>
-                        <li><Link href='/hire'>Hire Me</Link></li>
+                        <li><Link href='/projects?nav=1'>Projects + Ventures</Link></li>
+                        <li><Link href='/insights?nav=1'>Insights</Link></li>
+                        <li><Link href='/hire?nav=1'>Hire Me</Link></li>
                       </ul>
-                      <div className="home-button" onClick={() => setShowMenu(false)}>&lt; Back</div>
+                      <div className="home-button" onClick={handleBackClick}>&lt; Back to start</div>
                     </MainMenuOverlay>
                   )}
               </Section>

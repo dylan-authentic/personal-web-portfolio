@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import BlogItem from '../../components/blogIndexItem';
 import Layout from '../../components/layout/layout';
 import { getSortedPostsData } from '../../lib/posts';
@@ -19,9 +20,11 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ allPostsData }: { allPostsData: Array<PostData>}) {
+    const router = useRouter();
+    const showNavbarParam = router.query.nav=== '1' ? true: false;
     return (
         <>
-        <Layout>
+        <Layout showNavbar={showNavbarParam}>
         <div className="container">
             <h1 style={{fontFamily: 'Inconsolata, sans-Serif'}}>Articles</h1>
             <p>I write about engineering, product management, and sometimes a project that I'm working on. Some engineering posts are very much so my study notes. Posts about engineering are tagged 'Engineering' and posts about product management are tagged... you guessed it, 'Product Management'. Thanks for reading!</p>

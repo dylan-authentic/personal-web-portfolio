@@ -1,11 +1,14 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Layout, { siteTitle } from '../components/layout/layout';
 import { SectionPressed, ProjectWrapper } from '../styles/projects.styles';
 import ProjectItem from '../components/projectItem';
 
 export default function Projects() {
+    const router = useRouter();
+    const showNavbarParam = router.query.nav=== '1' ? true: false;
     return (
-        <Layout>
+        <Layout showNavbar={showNavbarParam}>
             <Head>
                 <title>Projects | {siteTitle}</title>
             </Head>
