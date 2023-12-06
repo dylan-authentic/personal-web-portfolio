@@ -29,7 +29,7 @@ export const GlassCard = styled.div`
 
     @media ${device.mobileS} {
       // ADJUST SIZING BELOW
-      height calc(100vh - 65px);
+      height: calc(100vh - 65px);
       margin: 25px 10px;
     }
     @media ${device.mobileL} {
@@ -39,15 +39,15 @@ export const GlassCard = styled.div`
       margin: 20px 30px;
     }
     @media ${device.laptop} {
-      height calc(100vh - 115px);
+      height: calc(100vh - 115px);
       margin: 45px 40px;
     }
     @media ${device.laptopL} {
-      height calc(100vh - 95px);
+      height: calc(100vh - 95px);
       margin: 35px 75px;
     }
     @media ${device.desktop} {
-      height calc(100vh - 180px);
+      height: calc(100vh - 180px);
       margin: 65px 125px;
     }
 `;
@@ -252,30 +252,30 @@ export const RetroButton = styled.a`
     }
 `;
 
-export const DropdownMenu = styled.div`
-  display: ${props => props.isOpen ? 'block' : 'none'};
-  position: absolute;
-  left: 50%; // Center horizontally relative to the parent
-  transform: translateX(-50%); // Adjust for the exact center
-  background-color: #f9f9f9; // Adjust according to your theme
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 16px;
-  font-family: 'PressStart2P', sans-serif;
+// export const DropdownMenu = styled.div`
+//   display: ${props => props.isOpen ? 'block' : 'none'};
+//   position: absolute;
+//   left: 50%; // Center horizontally relative to the parent
+//   transform: translateX(-50%); // Adjust for the exact center
+//   background-color: #f9f9f9; // Adjust according to your theme
+//   min-width: 160px;
+//   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//   z-index: 1;
+//   border-radius: 16px;
+//   font-family: 'PressStart2P', sans-serif;
 
-  a {
-    color: green;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+//   a {
+//     color: green;
+//     padding: 12px 16px;
+//     text-decoration: none;
+//     display: block;
+//     text-align: left;
 
-    &:hover {
-      background-color: #ddd;
-    }
-  }
-`;
+//     &:hover {
+//       background-color: #ddd;
+//     }
+//   }
+// `;
 
 export const MainMenuOverlay = styled.div`
   position: absolute;

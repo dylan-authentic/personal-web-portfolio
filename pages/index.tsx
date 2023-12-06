@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Layout, { siteTitle } from '../components/layout/layout';
-import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, RetroButton, DropdownMenu, MainMenuOverlay, TransitionScreen, FullScreenFadeIn } from '../styles/home.styles';
+import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, RetroButton, MainMenuOverlay, TransitionScreen, FullScreenFadeIn } from '../styles/home.styles';
 
 // const playSound = (soundUrl) => {
 //   const audio = new Audio(soundUrl);

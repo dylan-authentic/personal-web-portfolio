@@ -13,8 +13,6 @@ export default function Layout({
   home?: boolean,
   showNavbar?: boolean
 }) {
-  console.log("home: " + home);
-  console.log("showNavbar: " + showNavbar);
   return (
     <Styles.Container>
       <Head>
@@ -73,4 +71,3 @@ export default function Layout({
 }
 
 {/* <span style={{textShadow: 'initial'}}>🏗</span> */}
-{/* Added code to grab the nav query parameter from the url and show or hide the navbar in the layout component. As        */}

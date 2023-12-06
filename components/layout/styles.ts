@@ -36,13 +36,20 @@ const Wrapper = styled.div`
 const NavBar = styled.div`
     margin-top: 20px;
     position: relative;
-    background-color: rgba(221, 221, 221, 0);
+    // background-color: rgba(221, 221, 221, 0);
 `;
 
 const NavBarWrapper = styled.div`
     margin: 0px 55px;
-    background-color: #1d1d1d;
-    border-radius: 20px;
+    // background-color: #1d1d1d;
+    // border-radius: 15px;
+    // background: rgba(255, 255, 255, 0.2); // Semi-transparent white
+    // border-radius: 15px; // Round edges
+    // backdrop-filter: blur(4px); // This creates the frosted glass effect
+    // -webkit-backdrop-filter: blur(10px); // For Safari browser support
+    // border: 1px solid rgba(255, 255, 255, 0.3); // Optional: adds a light border
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Soft shadow for depth
+    // box-sizing: border-box; // Ensures padding doesn't affect overall width
     padding: 12px 0px;
     text-align: center;
     @media ${device.mobileS} {
