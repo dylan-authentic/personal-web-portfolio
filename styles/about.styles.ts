@@ -1,9 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { device } from './media-breakpoints';
 import { GlassCard } from './home.styles';
 
+export { GlassCardContainer } from './home.styles';
+
 export const GlassCardDark = styled(GlassCard)`
     background: rgba(0, 0, 0, 0.6); // Semi-transparent black
+    position: relative;
+    height: 75vh;
 `;
 
 export const Wrapper = styled.div`
@@ -41,9 +45,11 @@ export const ContentWrapper = styled.div`
     border-radius: 12px;
     color: white;
     font-family: 'PressStart2P', sans-serif;
-    position: fixed;
-    overflow-y: scroll;
-    max-height: 100vh; // This will make the container's height not exceed the viewport height
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%; // This will make the container's height not exceed the viewport height
+    height: 100%;
 
 
     h1 {
@@ -73,6 +79,7 @@ export const ContentWrapper = styled.div`
         }
     }
     @media ${device.laptop} {
+        padding: 56px 120px;
         // margin: 8px 110px 25px 110px;
     }
 `;
@@ -95,6 +102,85 @@ export const BackButton = styled.div`
         2px -2px 0 #00ff00, // Diagonal up right
         -2px 2px 0 #00ff00, // Diagonal down left
         -2px -2px 0 #00ff00;
+    color: green;
+    text-align: center;
+
+    // @media ${device.mobileS} {}
+
+    @media ${device.laptop} {
+        position: absolute; // Position it absolutely
+        bottom: 0; // Align to the bottom
+        left: 50%; // Center horizontally
+        transform: translateX(-50%); // Adjust for exact centering
+        padding-bottom: 50px;
+    }
 `;
 
-export { GlassCardContainer } from './home.styles';
+const scrollLeft = keyframes`
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+`;
+
+const scrollRight = keyframes`
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+`;
+
+export const TickerContainer = styled.div`
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: auto; // Adjust as needed, enough to fit both lines
+  margin-bottom: 30px;
+  margin-top: 12px;
+`;
+
+export const TickerLine = styled.div`
+  white-space: nowrap;
+  display: flex;
+  position: relative; // Changed to relative
+  width: max-content; // Ensure it's as wide as its content
+  animation: ${props => props.direction === 'left' ? scrollLeft : scrollRight} 538s linear infinite;
+`;
+
+export const TickerText = styled.span`
+  padding: 0px 50px; // Space between repetitions
+  border: solid 2px white;
+//   border-radius: 20px;
+  &:hover {
+    transform: translateY(-20px);
+  }
+`;
+
+export const ControllerContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; // Space between buttons
+  padding: 20px;
+  // Additional styling...
+`;
+
+export const ControllerButton = styled.button`
+  background-color: green; // Red color, adjust as needed
+  color: white;
+  border: none;
+  border-radius: 50%; // Circular buttons
+  width: 60px; // Button size, adjust as needed
+  height: 60px;
+  font-family: 'PressStart2P', sans-serif; // Retro font
+  cursor: pointer;
+  box-shadow: 0 4px grey; // Shadow for "pushed" effect
+
+  &:hover {
+    background-color: #00ff00; // Darker on hover
+  }
+
+  &:active {
+    box-shadow: 0 2px #600; // Adjust shadow for clicked effect
+    transform: translateY(2px); // Pushed effect
+  }
+
+  // Additional styling...
+`;
+

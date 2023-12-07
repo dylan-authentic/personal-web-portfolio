@@ -11,7 +11,7 @@ type ItemType = {
 export default function BlogItem({ item }: { item: ItemType}) {
     return (
         <div className="container">
-            <Link href={`/articles/${item.id}`}>
+            <Link href={`/insights/${item.id}`}>
                 <Styles.Wrapper>
                     <h2>{item.title}</h2>
                     <Styles.Subwrapper>

@@ -33,7 +33,7 @@ export const GlassCard = styled.div`
       margin: 25px 10px;
     }
     @media ${device.mobileL} {
-      margin: 25px 15px;
+      margin: 15px 8px;
     }
     @media ${device.tablet} {
       margin: 20px 30px;

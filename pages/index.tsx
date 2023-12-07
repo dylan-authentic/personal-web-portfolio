@@ -54,7 +54,7 @@ export default function Home() {
                     <IntroHeader>
                       <p>🗽🏎️</p>
                       <h1>DYLAN.ENGINEERING</h1>
-                      <h3>Creative Problem-Solving + Execution</h3>
+                      <h3>Problem-Solving + Execution</h3>
                     </IntroHeader>
                     <IntroContent>
                       {/* <Link href='/bio' passHref> */}
