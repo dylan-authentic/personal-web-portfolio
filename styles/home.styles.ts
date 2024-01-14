@@ -62,6 +62,8 @@ export const Section = styled.div`
         margin-top: 340px;
     }
 `;
+
+
   
 export const IntroHeader = styled.div`
     display: inline-block;
@@ -222,7 +224,7 @@ export const RetroButton = styled.a`
     display: inline-block;
     font-family: 'PressStart2P', sans-serif;
     font-size: 14px;
-    margin: 0px 2px;
+    margin: 0px 2px 0px 2px;
     cursor: pointer;
     box-shadow: 0 9px #999;
 
@@ -313,7 +315,10 @@ export const MainMenuOverlay = styled.div`
     margin: 0;
   }
 
-  li {
+  li, button {
+    cursor: pointer;
+    background: none;
+    border: none;
     margin: 10px 0;
     font-family: 'PressStart2P', sans-serif;
     color: green;
@@ -333,8 +338,11 @@ export const MainMenuOverlay = styled.div`
 
         a {
           color: green;
-          
         }
+  }
+
+  button:hover {
+    text-decoration: underline; /* Underlines the text on hover */
   }
 
   .home-button {
@@ -364,7 +372,7 @@ export const MainMenuOverlay = styled.div`
     h2 {
       font-size: 16px;
     }
-    li {
+    li, button {
       font-size: 12px;
     }
     .home-button {
@@ -379,7 +387,7 @@ export const MainMenuOverlay = styled.div`
     h2 {
       font-size: 20px;
     }
-    li {
+    li, button {
       font-size: 15px;
     }
   }
@@ -387,7 +395,7 @@ export const MainMenuOverlay = styled.div`
     h1 {
       font-size: 28px;
     }
-    li {
+    li, button {
       font-size: 20px;
     }
   }
@@ -395,7 +403,7 @@ export const MainMenuOverlay = styled.div`
     h1 {
       font-size: 28px;
     }
-    li {
+    li, button {
       font-size: 24px;
     }
   }

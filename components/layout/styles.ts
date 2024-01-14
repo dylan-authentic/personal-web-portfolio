@@ -1,25 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 import { device } from '../../styles/media-breakpoints';
 
-const scrollHorizontal = keyframes`
-    from { background-position: 0 0; }
-    to { background-position: 0% 100%; }
-`;
-
-const scrollVertical = keyframes`
-    from { background-position: 0 0; }
-    to { background-position: 100% 100%; }
-`;
-
 const Wrapper = styled.div`
-    height: 100vh;
+    height: ${props => props.home ? '100%' : '100%'};
     width: 100vw;
-    background: repeating-linear-gradient(0deg, green, green 1px, transparent 1px, transparent 53px),
-                repeating-linear-gradient(90deg, green, green 1px, transparent 1px, transparent 69px),
-                black;
-    background-size: 70px 70px; // impacts the lines moving somehow
-    animation: ${scrollHorizontal} 5s linear infinite, ${scrollVertical} 35s linear infinite;
-    border: solid 10px transparent;
 
     // @media ${device.mobileS} {
     //   margin: 0px;
@@ -134,7 +118,7 @@ const Footer = styled.div`
     text-align: center;
     color: white;
     // background-color: #2C5364;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     border-radius: 20px;
     padding: 5px 18px;
 
@@ -149,7 +133,7 @@ const Footer = styled.div`
       // font-weight: 700;
       font-family: 'PressStart2P', sans-serif;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
     text-shadow:
         2px 0 0 #00ff00, // Right

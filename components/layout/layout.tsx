@@ -32,11 +32,11 @@ export default function Layout({
       </Head>
       <>
         {(home || !showNavbar) ? (
-          <Styles.Wrapper>
+          <Styles.Wrapper home={home}>
             <>{children}</>
           </Styles.Wrapper>
         ) : (
-          <Styles.Wrapper>
+          <Styles.Wrapper home={home}>
           <Styles.NavBar>
             <Styles.NavBarWrapper>
               <Styles.Container>
@@ -56,13 +56,13 @@ export default function Layout({
             </Styles.NavBarWrapper>
           </Styles.NavBar>
           <main>{children}</main>
-          <Styles.FooterWrapper>
+          {/* <Styles.FooterWrapper>
             <Styles.Footer>
               <Link href="/?menu=main">
                 &lt; back to main menu
               </Link>
             </Styles.Footer>
-          </Styles.FooterWrapper>
+          </Styles.FooterWrapper> */}
           </Styles.Wrapper>
         )}
       </>

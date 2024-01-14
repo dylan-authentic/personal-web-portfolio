@@ -10,6 +10,12 @@ import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, Retr
 //   audio.play();
 // };
 
+const texts = [
+  "Technical Problem Solving",
+  "Product and Program Management",
+  "Business Strategy and Delivery"
+];
+
 export default function Home() {
   const router = useRouter();
   const menuParameter = router.query.menu === 'main' ? true: undefined;
@@ -17,13 +23,17 @@ export default function Home() {
   const [showMenu, setShowMenu] = useState(false);
   const [showFullScreenFadeIn, setShowFullScreenFadeIn] = useState(false);
   const [showTransition, setShowTransition] = useState(false);
+  // State to keep track of current text
+  const [currentText, setCurrentText] = useState(texts[0]);
+  
+  const [index, setIndex] = useState(0);
 
-  const handleStartClick = () => {
+  const handleStartClick = (path) => {
     setShowTransition(true);
     setTimeout(() => {
       setShowFullScreenFadeIn(true); // Activate the full-screen overlay
       setTimeout(() => {
-        router.push(`/about?nav=0`); // Navigate after the fade-out completes
+        router.push(path); // Navigate after the fade-out completes
       }, 500); // Duration of the fade-out animation
     }, 800); // Adjust timing based on your animation
   };
@@ -32,6 +42,17 @@ export default function Home() {
     setShowMenu(false);
     router.replace(router.pathname);
   }
+
+  useEffect(() => {
+    // Change text every 3 seconds (3000 milliseconds)
+    const intervalId = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % texts.length);
+      setCurrentText(texts[index]);
+    }, 3000);
+
+    // Clear interval on component unmount
+    return () => clearInterval(intervalId);
+  }, [index, texts]);
 
   useEffect(() => {
     if(menuParameter) setShowMenu(true);
@@ -54,12 +75,10 @@ export default function Home() {
                     <IntroHeader>
                       <p>🗽🏎️</p>
                       <h1>DYLAN.ENGINEERING</h1>
-                      <h3>Problem-Solving + Execution</h3>
+                      <h3>{currentText}</h3>
                     </IntroHeader>
                     <IntroContent>
-                      {/* <Link href='/bio' passHref> */}
-                        <RetroButton onClick={handleStartClick}>&gt; PRESS START &lt;</RetroButton>
-                      {/* </Link> */}
+                        <RetroButton onClick={() => handleStartClick('/about?nav=1')}>&gt; PRESS START &lt;</RetroButton>
                       <br/>
                       <br/>
                       <RetroButton onClick={() => setShowMenu(true)}>&gt; MAIN MENU &lt;</RetroButton>
@@ -79,10 +98,10 @@ export default function Home() {
                         <h3>Main Menu</h3>
                       </IntroHeader>
                       <ul>
-                        <li><Link href='/about?nav=1'>About Me</Link></li>
-                        <li><Link href='/projects?nav=1'>Projects + Ventures</Link></li>
-                        <li><Link href='/insights?nav=1'>Insights</Link></li>
-                        <li><Link href='/hire?nav=1'>Hire Me</Link></li>
+                        <li><button onClick={() => handleStartClick('/about?nav=1')}>About Me</button></li>
+                        <li><button onClick={() => handleStartClick('/projects?nav=1')}>Projects + Ventures</button></li>
+                        <li><button onClick={() => handleStartClick('/insights?nav=1')}>Insights</button></li>
+                        <li><button onClick={() => handleStartClick('/hire?nav=1')}>Hire Me</button></li>
                       </ul>
                       <div className="home-button" onClick={handleBackClick}>&lt; Back to start</div>
                     </MainMenuOverlay>

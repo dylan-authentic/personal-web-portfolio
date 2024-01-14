@@ -5,6 +5,8 @@ import { GlassCard } from './home.styles';
 export { GlassCardContainer } from './home.styles';
 
 export const GlassCardDark = styled(GlassCard)`
+    margin-top: 23px;
+    margin-bottom: 20px;
     background: rgba(0, 0, 0, 0.6); // Semi-transparent black
     position: relative;
     height: 75vh;
@@ -56,6 +58,10 @@ export const ContentWrapper = styled.div`
         margin: 0px;
         color: white;
         font-family: 'PressStart2P', sans-serif;
+    }
+
+    p {
+      margin: 0px;
     }
 
     @media ${device.mobileS} {
@@ -117,12 +123,12 @@ export const BackButton = styled.div`
 `;
 
 const scrollLeft = keyframes`
-  0% { transform: translateX(100%); }
+  0%, 50% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 `;
 
 const scrollRight = keyframes`
-  0% { transform: translateX(-100%); }
+  0%, 30% { transform: translateX(-100%); }
   100% { transform: translateX(100%); }
 `;
 
@@ -140,7 +146,11 @@ export const TickerLine = styled.div`
   display: flex;
   position: relative; // Changed to relative
   width: max-content; // Ensure it's as wide as its content
-  animation: ${props => props.direction === 'left' ? scrollLeft : scrollRight} 538s linear infinite;
+  animation: ${props => props.direction === 'left' ? scrollLeft : scrollRight} 90s linear infinite;
+`;
+
+export const TickerLineTwo = styled(TickerLine)`
+  animation: ${props => props.direction === 'left' ? scrollLeft : scrollRight} 90s linear infinite;
 `;
 
 export const TickerText = styled.span`
@@ -153,7 +163,8 @@ export const TickerText = styled.span`
 `;
 
 export const ControllerContainer = styled.div`
-  display: flex;
+  display: block;
+  text-align: center;
   justify-content: center;
   align-items: center;
   gap: 20px; // Space between buttons
@@ -184,3 +195,33 @@ export const ControllerButton = styled.button`
   // Additional styling...
 `;
 
+export const ControllerButtonTwo = styled.a`
+// margin: 0px;
+color: green;
+// font-family: 'Fraunces', sans-serif;
+// font-weight: 700;
+font-family: 'PressStart2P', sans-serif;
+font-size: 15px;
+margin-top: 20px;
+cursor: pointer;
+text-shadow:
+  2px 0 0 #00ff00, // Right
+  3px 0 0 #00ff00,
+  -2px 0 0 #00ff00, // Left
+  -3px 0 0 #00ff00,
+  0 2px 0 #00ff00, // Down
+  0 3px 0 #00ff00,
+  0 -2px 0 #00ff00, // Up
+  0 -3px 0 #00ff00,
+  2px 2px 0 #00ff00, // Diagonal down right
+  2px -2px 0 #00ff00, // Diagonal up right
+  -2px 2px 0 #00ff00, // Diagonal down left
+  -2px -2px 0 #00ff00;
+`;
+
+export const OffscreenDiv = styled.div`
+  position: absolute;
+  left: -9999px; // Position it off-screen
+  visibility: hidden; // Make sure it's not visible
+  white-space: nowrap; // Prevent line breaks
+`;

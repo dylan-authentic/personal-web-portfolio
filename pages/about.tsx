@@ -1,17 +1,55 @@
+import { useEffect, useState, useRef } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Layout, { siteTitle } from '../components/layout/layout';
-import { Wrapper, LinkWrapper, ContentWrapper, BackButton, GlassCardContainer, GlassCardDark, TickerContainer, TickerLine, TickerText, ControllerContainer, ControllerButton } from '../styles/about.styles';
-  
+import { ContentWrapper, GlassCardContainer, GlassCardDark, TickerContainer, TickerLine, TickerText, ControllerContainer, ControllerButton, ControllerButtonTwo, OffscreenDiv, TickerLineTwo } from '../styles/about.styles';
+
+const textArray = ["Product Management", "Software Development", "Business Development", "Custom Websites", "Consulting"];
+const repeatedText = textArray.concat(textArray).concat(textArray).concat(textArray).concat(textArray);
+const repeatedTextTwo = textArray.concat(textArray).concat(textArray).concat(textArray).concat(textArray).concat(textArray);
+
 export default function AboutMe() {
     const router = useRouter();
     const showNavbarParam = router.query.nav=== '1' ? true: false;
+
+    const [textWidth, setTextWidth] = useState(0);
+    const measureRef = useRef(null);
+
+    const [repetitions, setRepetitions] = useState(0);
+
+    useEffect(() => {
+        if (measureRef.current) {
+            setTextWidth(measureRef.current.offsetWidth);
+        }
+    }, []);
+
+    useEffect(() => {
+        if (textWidth > 0) {
+            const screenWidth = window.innerWidth;
+            const neededRepetitions = Math.ceil(screenWidth / textWidth);
+            setRepetitions(neededRepetitions * 3); // Adjust the multiplier as needed
+        }
+    }, [textWidth]);
     
+    useEffect(() => {
+        const handleResize = () => {
+            if (textWidth > 0) {
+                const newScreenWidth = window.innerWidth;
+                const newRepetitions = Math.ceil(newScreenWidth / textWidth);
+                setRepetitions(newRepetitions * 3); // Adjust the multiplier as needed
+            }
+        };
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => window.removeEventListener('resize', handleResize);
+    }, [textWidth]);
+
     const handleBackClick =() => {
         router.push('/')
     }
     const handleNextClick =() => {
-        router.push('/projects?nav=0')
+        router.push('/projects?nav=1')
     }
 
     return (
@@ -31,129 +69,35 @@ export default function AboutMe() {
                         </div> */}
                         <ContentWrapper>
                             <h1>About Me</h1>
+                            {/* <OffscreenDiv ref={measureRef}>
+                                {repeatedText.join(' ')} 
+                            </OffscreenDiv>
                             <TickerContainer>
-                                {/* <TickerLine direction="left">
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText>
-                                    {/* <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Consulting</TickerText> *
+                                <TickerLine direction="left">
+                                    {Array.from({ length: 20 }).map((_, index) => (
+                                        repeatedText.map((text, textIndex) => (
+                                            <TickerText key={`left-${index}-${textIndex}`}>{text}</TickerText>
+                                        ))
+                                    ))}
                                 </TickerLine> */}
-                                <TickerLine direction="right">
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                    <TickerText>Product Management</TickerText>
-                                    <TickerText>Software Development</TickerText>
-                                    <TickerText>Business Development</TickerText>
-                                    <TickerText>Custom Websites</TickerText>
-                                    <TickerText>Freelance Consulting</TickerText>
-                                </TickerLine>
-                            </TickerContainer>
-                            <p>Professionally, I'm a software product manager with 3+ years of ADTECH experience, and 6 years of software engineering experience. {<br/>} {<br/>} Additionally, I'm an entreprenuer with a passion for business, technology, music, art, design, and engineering.{<br/>} {<br/>} Some additional interests of mine are machine learning, advanced manufacturing and design, sports, and community development.{<br/>} {<br/>} Based in New York City. {<br/>} {<br/>} Dato curioso: actualmente, estoy estudiando español para aprender un idioma nuevo y aprender sobre otras culturas del mundo. ¡Pregúntame sobre eso!</p>
+                                {/* <TickerLineTwo direction="right">
+                                    {Array.from({ length: 1 }).map((_, index) => (
+                                        repeatedTextTwo.map((text, textIndex) => (
+                                            <TickerText key={`right-${index}-${textIndex}`}>{text}</TickerText>
+                                        ))
+                                    ))}
+                                </TickerLineTwo> */}
+                            {/* </TickerContainer> */}
+                            <p>Hey, I'm Dylan <span style={{fontSize: '22px'}}>👋🏽</span>{<br/>} {<br/>}I currently work as a software product manager in ADTECH, with 3 years of experience driving and executing product strategy. My background is in computer science with 6+ years of programming and software engineering experience building full-stack applications. {<br/>} {<br/>} I'm passionate about business, technology, design, entreprenuership, and engineering, with additional interests in music, sports, fashion, community development, and advanced manufacturing.{<br/>} {<br/>} I'm a continuous learner and am currently self-studying foundational mathematics and Spanish in my free time. {<br/>} {<br/>} I'm based in New York City. {<br/>} {<br/>} Estoy estudiando español para aprender un idioma nuevo y aprender sobre otras culturas del mundo. ¡Pregúntame sobre eso!</p>
+                            {/* <ControllerContainer>
+                                <ControllerButtonTwo onClick={handleNextClick}>Projects + Ventures &gt;</ControllerButtonTwo>
+                            </ControllerContainer> */}
                             {/* {!showNavbarParam && (<BackButton onClick={handleBackClick}>&lt; Back to start</BackButton>)} */}
                         </ContentWrapper>
-                        {!showNavbarParam && (
+                        {showNavbarParam && (
                         <ControllerContainer>
-                            <ControllerButton onClick={handleBackClick}>Home</ControllerButton>
-                            <ControllerButton onClick={handleNextClick}>Next</ControllerButton>
+                            <ControllerButtonTwo onClick={handleNextClick}>Continue: Projects and Ventures &gt;</ControllerButtonTwo>
+                            <ControllerButtonTwo style={{display: 'block', color: 'red'}} onClick={handleBackClick}>&lt; Quit</ControllerButtonTwo>
                         </ControllerContainer>
                         )}
                 </GlassCardDark>
