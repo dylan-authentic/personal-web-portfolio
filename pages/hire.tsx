@@ -2,18 +2,28 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Layout, {siteTitle} from "../components/layout/layout";
 import { ContactWrapper, LinkWrapper, SectionPressed } from '../styles/contact.styles';
+import { ControllerContainer, ControllerButtonTwo } from '../styles/projects.styles';
 
 export default function TestPost() {
     const router = useRouter();
     const showNavbarParam = router.query.nav=== '1' ? true: false;
+    
+    const handleBackClick =() => {
+        router.push('/')
+    }
+
+    const handleNextClick =() => {
+        router.push('/')
+    }
+
     return (
         <Layout showNavbar={showNavbarParam}>
             <Head>
                 <title>Contact Me | {siteTitle}</title>
             </Head>
             <SectionPressed>
-                <h1>Contact Me</h1>
                 <ContactWrapper>
+                    <h1>Contact Me</h1>
                     <LinkWrapper>
                         <a href="mailto:dylan.terrell14@gmail.com">📧 Email</a>
                     </LinkWrapper>
@@ -31,6 +41,10 @@ export default function TestPost() {
                     </LinkWrapper>
                 </ContactWrapper>
             </SectionPressed>
+            <ControllerContainer>
+                    {/* <ControllerButtonTwo onClick={handleNextClick}>Next: Insights &gt;</ControllerButtonTwo> */}
+                    <ControllerButtonTwo onClick={handleNextClick}>End &gt; </ControllerButtonTwo>
+                </ControllerContainer>
         </Layout>
     )
   }

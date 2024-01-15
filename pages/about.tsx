@@ -88,7 +88,7 @@ export default function AboutMe() {
                                     ))}
                                 </TickerLineTwo> */}
                             {/* </TickerContainer> */}
-                            <p>Hey, I'm Dylan <span style={{fontSize: '22px'}}>👋🏽</span>{<br/>} {<br/>}I currently work as a software product manager in ADTECH, with 3 years of experience driving and executing product strategy. My background is in computer science with 6+ years of programming and software engineering experience building full-stack applications. {<br/>} {<br/>} I'm passionate about business, technology, design, entreprenuership, and engineering, with additional interests in music, sports, fashion, community development, and advanced manufacturing.{<br/>} {<br/>} I'm a continuous learner and am currently self-studying foundational mathematics and Spanish in my free time. {<br/>} {<br/>} I'm based in New York City. {<br/>} {<br/>} Estoy estudiando español para aprender un idioma nuevo y aprender sobre otras culturas del mundo. ¡Pregúntame sobre eso!</p>
+                            <p>Hey, I'm Dylan <span style={{fontSize: '22px'}}>👋🏽</span>{<br/>} {<br/>}I currently work as a software product manager in ADTECH, with 3 years of experience driving and executing product strategy. My background is in computer science with 6+ years of programming and software engineering experience building full-stack applications. {<br/>} {<br/>} I'm passionate about business, technology, design, entreprenuership, and engineering, with additional interests in music, sports, fashion, community development, and advanced manufacturing.{<br/>} {<br/>} I'm a continuous learner and project builder, and I'm currently self-studying foundational mathematics and Spanish in my free time. {<br/>} {<br/>} I'm based in New York City. {<br/>} {<br/>} Estoy estudiando español para aprender un idioma nuevo y aprender sobre otras culturas del mundo. ¡Pregúntame sobre eso!</p>
                             {/* <ControllerContainer>
                                 <ControllerButtonTwo onClick={handleNextClick}>Projects + Ventures &gt;</ControllerButtonTwo>
                             </ControllerContainer> */}
@@ -96,7 +96,7 @@ export default function AboutMe() {
                         </ContentWrapper>
                         {showNavbarParam && (
                         <ControllerContainer>
-                            <ControllerButtonTwo onClick={handleNextClick}>Continue: Projects and Ventures &gt;</ControllerButtonTwo>
+                            <ControllerButtonTwo onClick={handleNextClick}>Next: Projects and Ventures &gt;</ControllerButtonTwo>
                             <ControllerButtonTwo style={{display: 'block', color: 'red'}} onClick={handleBackClick}>&lt; Quit</ControllerButtonTwo>
                         </ControllerContainer>
                         )}

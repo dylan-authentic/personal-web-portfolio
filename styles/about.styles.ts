@@ -7,7 +7,7 @@ export { GlassCardContainer } from './home.styles';
 export const GlassCardDark = styled(GlassCard)`
     margin-top: 23px;
     margin-bottom: 20px;
-    background: rgba(0, 0, 0, 0.6); // Semi-transparent black
+    background: rgba(255, 255, 255, 0.3); // Semi-transparent black
     position: relative;
     height: 75vh;
 `;

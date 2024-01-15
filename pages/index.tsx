@@ -78,6 +78,7 @@ export default function Home() {
                       <h3>{currentText}</h3>
                     </IntroHeader>
                     <IntroContent>
+                      {/* <h3>Welcome!</h3> */}
                         <RetroButton onClick={() => handleStartClick('/about?nav=1')}>&gt; PRESS START &lt;</RetroButton>
                       <br/>
                       <br/>

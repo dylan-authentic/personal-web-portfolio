@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 `;
 
 const NavBar = styled.div`
-    margin-top: 20px;
+    margin-top: 8px;
     position: relative;
     // background-color: rgba(221, 221, 221, 0);
 `;

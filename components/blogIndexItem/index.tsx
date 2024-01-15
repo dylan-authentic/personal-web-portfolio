@@ -10,7 +10,7 @@ type ItemType = {
 
 export default function BlogItem({ item }: { item: ItemType}) {
     return (
-        <div className="container">
+        <Styles.BlogItemContainer>
             <Link href={`/insights/${item.id}`}>
                 <Styles.Wrapper>
                     <h2>{item.title}</h2>
@@ -20,6 +20,6 @@ export default function BlogItem({ item }: { item: ItemType}) {
                     </Styles.Subwrapper>
                 </Styles.Wrapper>
             </Link>
-        </div>
+        </Styles.BlogItemContainer>
     )
 }
