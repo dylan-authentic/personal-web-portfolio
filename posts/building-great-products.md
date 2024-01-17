@@ -3,7 +3,6 @@ title: 'Building Great Products that Drive Excitement'
 date: '2021-02-18'
 tag: Product Management
 ---
-[Originally posted on Medium](https://dylanauthentic.medium.com/building-great-products-that-drive-customer-excitement-3d8e32858761)
 
 What do you consider to be a great product?
 

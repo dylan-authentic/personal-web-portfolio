@@ -4,7 +4,6 @@ date: '2021-02-24'
 tag: Product Management
 ---
 
-# Product Strategy: Launching an E-Commerce Marketplace (Pt. 1)
 
 ###### Executive Summary
 Due to the global pandemic accelerating consumer adoption of digital markets, e-commerce spending in the United States has experienced a 40% YOY increase in 2020. While retail has been transitioning online for more than a decade now, online shopping has become more of a defacto form of discovering and purchasing products for consumers than ever before. As a result, consumers are more likely to begin their search for products online with the intention of identifying products and brands that align with their preferences, interests, and purchasing habits. Within the current landscape of e-commerce, there exists a lane for community-driven retail that provides a fresh, digital shopping experience and connects shoppers with unfamiliar, yet trusted small and independent brands.

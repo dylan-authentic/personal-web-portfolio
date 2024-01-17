@@ -12,7 +12,7 @@ import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, Retr
 
 const texts = [
   "Technical Problem Solving",
-  "Product and Program Management",
+  "Product Management",
   "Business Strategy and Delivery"
 ];
 

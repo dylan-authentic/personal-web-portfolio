@@ -1,6 +1,9 @@
+import { useRouter } from 'next/router';
 import Layout from '../../components/layout/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import { PostWrapper } from '../../styles/posts.styles'
+import { PostWrapper, PostContainer } from '../../styles/posts.styles'
+import { ControllerContainer, ControllerButtonTwo } from '../../styles/projects.styles';
+
 
 interface Paths {
     params: {
@@ -26,9 +29,14 @@ export async function getStaticProps({ params }: Paths) {
 }
 
 export default function Post({ postData }) {
-    // console.log(postData.contentHtml)
+    const router = useRouter();
+
+    const handleBackClick =() => {
+        router.push('/insights?nav=1')
+    }
+
   return (
-    <Layout>
+    <Layout showNavbar={true}>
         <div className="container">
             <PostWrapper>
                 <h2>{postData.title}</h2>
@@ -37,6 +45,9 @@ export default function Post({ postData }) {
                 <br />
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </PostWrapper>
+            <ControllerContainer>
+                <ControllerButtonTwo onClick={handleBackClick}>&lt; Back to Insights</ControllerButtonTwo>
+            </ControllerContainer>
         </div>
     </Layout>
   )
