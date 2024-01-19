@@ -39,10 +39,13 @@ export default function Post({ postData }) {
     <Layout showNavbar={true}>
         <div className="container">
             <PostWrapper>
+                <ControllerContainer style={{textAlign: 'left'}}>
+                    <ControllerButtonTwo onClick={handleBackClick}>&lt; Back</ControllerButtonTwo>
+                </ControllerContainer>
                 <h2>{postData.title}</h2>
                 <h6>{postData.tag}</h6>
                 <h6>{postData.date}</h6>
-                <br />
+                <hr/>
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </PostWrapper>
             <ControllerContainer>

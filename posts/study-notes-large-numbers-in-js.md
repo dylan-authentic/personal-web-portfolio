@@ -4,16 +4,16 @@ date: '2021-01-07'
 tag: Engineering
 ---
 
-### JavaScript: Adding Extremely Large Numbers
-
-###### Number.MAX_SAFE_INTEGER
+##### JavaScript: Adding Extremely Large Numbers
+#
+##### Number.MAX_SAFE_INTEGER
 In JavaScript, the maximum number of bits available to store an integer is 53. In other words, we can only store an integer in JavaScript that can be represented by 53 bits in memory. 
 
 Because of this, JavaScript implements a `MAX_SAFE_INTEGER` value on the `Number` object that stores the largest value available to be used in a program. The term safe refers to the ability for the JavaScript language to hold a one-to-one mapping of an integer value to it's underlying representation. The opposite of this is an unsafe integer, in which the JavaScript language will map two or more integer values to the same underlying representation in memory. In other words, when a value is considered safe, you will constantly have direct access to that value. When a value is unsafe, you will receive the wrong number that you want to use because JavaScript isn't able to correctly hold that value in memory.
 
 **Example**
-`Number.MAX_SAFE_INTEGER + 1 === Number.MAX_SAFE_INTEGER + 2`
-This statement will return true, which is mathematically incorrect
+> `Number.MAX_SAFE_INTEGER + 1 === Number.MAX_SAFE_INTEGER + 2`
+- This statement will return true, which is mathematically incorrect
 
 ###### Factorial
 A factorial calculation is just the given number multiplied by all the numbers belows it down to 1. 

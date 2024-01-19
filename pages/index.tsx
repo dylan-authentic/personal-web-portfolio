@@ -11,6 +11,7 @@ import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, Retr
 // };
 
 const texts = [
+  "Freelance Projects",
   "Technical Problem Solving",
   "Product Management",
   "Business Strategy and Delivery"
@@ -44,22 +45,25 @@ export default function Home() {
   }
 
   useEffect(() => {
-    // Change text every 3 seconds (3000 milliseconds)
-    const intervalId = setInterval(() => {
+    // Function to update index
+    const updateIndex = () => {
       setIndex((prevIndex) => (prevIndex + 1) % texts.length);
-      setCurrentText(texts[index]);
-    }, 3000);
-
-    // Clear interval on component unmount
+    };
+  
+    // Immediately update index on first render
+    updateIndex();
+  
+    // Set the interval for subsequent updates
+    const intervalId = setInterval(updateIndex, 2200);
+  
+    // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
-  }, [index, texts]);
-
+  }, []); // Empty dependency array to run only on component mount
+  
   useEffect(() => {
-    if(menuParameter) setShowMenu(true);
-    // if (typeof window !== undefined) {
-    //   // playSound('/sounds/intro-music.wav');
-    // }
-  }, []);
+    // Update currentText whenever index changes
+    setCurrentText(texts[index]);
+  }, [index, texts]);
 
   return (
     <Layout home>

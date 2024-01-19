@@ -19,10 +19,10 @@ export default function Projects() {
     return (
         <Layout showNavbar={showNavbarParam}>
             <Head>
-                <title>Projects | {siteTitle}</title>
+                <title>Projects + Ventures | {siteTitle}</title>
             </Head>
             <SectionPressed>
-                <h1>Projects</h1>
+                <h1>Projects + Ventures</h1>
                 <ProjectWrapper>
                     <ProjectItem
                         title='&gt; Link Social'

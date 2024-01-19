@@ -4,7 +4,7 @@ date: '2021-02-18'
 tag: Product Management
 ---
 
-What do you consider to be a great product?
+##### What do you consider to be a great product?
 
 Thinking about it from a high level, it usually seems to come down to usefulness in my opinion. I think it's very possible to build cool products, but not great ones. Those are usually the nice-to-haves. Like, it would be nice to have this thing, but it's not necessarily a must have. When building great products that deliver maximum impact, customers tend to get the most value from things they are eagerly excited to use. These products usually fall into the category of "things your friends casually tell you about without you asking". This is the sign of a great product though. It generates excitement in a way that the customer views it as something else, something other than an item they spent their money on or an application they decided to try out. They see it as a necessity - as something they wouldn't be able to experience their daily life without. 
 

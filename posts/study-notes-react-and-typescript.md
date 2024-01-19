@@ -4,8 +4,8 @@ date: '2021-02-01'
 tag: Engineering
 ---
 
-# TypeScript + React
-[Reference](https://github.com/typescript-cheatsheets/react)
+##### TypeScript + React  
+Technical notes for using Typescript with React
 
 ##### Functional Components
 - Create a type or interface that defines the props that the component receives
@@ -62,8 +62,10 @@ __With Redux__
 ##### Class Components
 - Use `React.Component<PropType, StateType>` (both parameters are optional)
 
-##### Useful Prop Types for React Apps
-[Link](https://github.com/typescript-cheatsheets/react#basic-prop-types-examples)
+##### Reference Links
+- Useful Prop Types for React Apps: [https://github.com/typescript-cheatsheets/react#basic-prop-types-examples](https://github.com/typescript-cheatsheets/react#basic-prop-types-examples)
 
-##### Useful React-specific Prop Types for React Apps
-[Link](https://github.com/typescript-cheatsheets/react#useful-react-prop-type-examples)
+- Useful React-specific Prop Types for React Apps: [https://github.com/typescript-cheatsheets/react#useful-react-prop-type-examples](https://github.com/typescript-cheatsheets/react#useful-react-prop-type-examples)
+
+
+- Article Reference: [https://github.com/typescript-cheatsheets/react](https://github.com/typescript-cheatsheets/react)
