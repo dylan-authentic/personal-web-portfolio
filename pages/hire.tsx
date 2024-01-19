@@ -25,19 +25,16 @@ export default function TestPost() {
                 <ContactWrapper>
                     <h1>Hire Me</h1>
                     <LinkWrapper>
-                        <a href="mailto:dylan.terrell14@gmail.com">📧 Email</a>
+                        <a href="mailto:dylan@dylan.engineering">📧 Email</a>
                     </LinkWrapper>
                     <LinkWrapper>
-                        <a target='_blank' href="https://drive.google.com/file/d/1KVTY2TKNP7KY1gK4dTXbm-AIX0HL2br5/view?usp=sharing">⚙️ Resume</a>
+                        <a target='_blank' href="https://drive.google.com/file/d/1KVTY2TKNP7KY1gK4dTXbm-AIX0HL2br5/view?usp=sharing">⚙️ Resume (Available upon request)</a>
                     </LinkWrapper>
                     <LinkWrapper>
                         <a target='_blank' href="https://www.linkedin.com/in/dylan-terrell/">🤝 LinkedIn</a>
                     </LinkWrapper>
                     <LinkWrapper>
                         <a target='_blank' href="https://github.com/dylan-authentic">💻 Github</a>
-                    </LinkWrapper>
-                    <LinkWrapper>
-                        <a target='_blank' href="https://dylanauthentic.medium.com/">✒️ Medium</a>
                     </LinkWrapper>
                 </ContactWrapper>
             </SectionPressed>

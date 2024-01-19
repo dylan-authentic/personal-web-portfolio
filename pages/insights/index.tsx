@@ -48,7 +48,7 @@ export default function Blog({ allPostsData }: { allPostsData: Array<PostData>})
         <PostContainer>
             <PostHeaderSection>
                 <h1>Insights</h1>
-                <p>I write about engineering, product management, and sometimes a project that I'm working on. Some engineering posts are very much so my study notes. Posts about engineering are tagged 'Engineering' and posts about product management are tagged... you guessed it, 'Product Management'. Thanks for reading!</p>
+                <p>I write about engineering, product management, and sometimes a project that I'm working on. The engineering posts are mostly technical study notes for things I'm learning. Posts about technical topics are tagged 'Engineering' and posts about product management are tagged... you guessed it, 'Product Management'. Feel free to use the filters below. Thanks for reading!</p>
             </PostHeaderSection>
             <Filters>
                 <button onClick={() => setFilterTag('')} className={!filterTag ? 'active' : ''}>All Topics</button>
