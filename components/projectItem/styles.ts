@@ -15,6 +15,7 @@ export const ProjectItemWrapper = styled.div`
     font-size: 12px;
     @media ${device.mobileS} {
         width: auto;
+        margin-bottom: 24px;
     }
     @media ${device.tablet} {
         width: 45%;

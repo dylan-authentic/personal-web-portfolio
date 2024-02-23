@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Layout from '../../components/layout/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import { PostWrapper, PostContainer } from '../../styles/posts.styles'
+import { PostWrapper, PostContainer, ControllerContainerBack } from '../../styles/posts.styles'
 import { ControllerContainer, ControllerButtonTwo } from '../../styles/projects.styles';
 
 
@@ -39,9 +39,9 @@ export default function Post({ postData }) {
     <Layout showNavbar={true}>
         <div className="container">
             <PostWrapper>
-                <ControllerContainer style={{textAlign: 'left'}}>
+                <ControllerContainerBack style={{textAlign: 'left'}}>
                     <ControllerButtonTwo onClick={handleBackClick}>&lt; Back</ControllerButtonTwo>
-                </ControllerContainer>
+                </ControllerContainerBack>
                 <h2>{postData.title}</h2>
                 <h6>{postData.tag}</h6>
                 <h6>{postData.date}</h6>

@@ -45,11 +45,12 @@ const Wrapper = styled.div`
         font-size: 8px;
     }
     @media ${device.mobileS} {
-        margin: 20px 10px 20px 10px;
+        margin: 13px 0px 20px 0px;
+        padding: 45px 15px; 
     }
     @media ${device.mobileL} {
         h2 {
-            padding: 12px 12px;
+            padding: 12px 0px;
         }
     }
 `;

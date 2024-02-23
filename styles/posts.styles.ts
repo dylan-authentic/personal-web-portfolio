@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { device } from './media-breakpoints';
+import { ControllerContainer, ControllerButtonTwo } from './projects.styles';
 
 export const PostWrapper = styled.div`
     margin-top: 15px;
@@ -55,10 +56,34 @@ export const PostWrapper = styled.div`
         border-radius: 3px;
         white-space: pre-wrap
     }
+    @media ${device.mobileS} {
+        padding: 0px 20px;
+        margin-top: 0px;
+        h6 {
+            margin-bottom: 0px;
+        }
+        code {
+            font-size: 12px;
+        }
+    }
+    @media ${device.mobileM} {
+        margin: 10px;
+    }
+    @media ${device.mobileL} {
+        margin: 15px;
+    }
     @media ${device.tablet} {
+        margin: 0px 25px;
+        padding: 10px 50px;
         pre {
             margin: 0px 60px;
         }
+    }
+    @media ${device.laptop} {
+        margin: 0px 45px;
+    }
+    @media ${device.laptopL} {
+        margin: 10px 45px;
     }
 `;
 
@@ -83,6 +108,15 @@ export const PostContainer = styled.div`
         color: white;
         font-family: 'PressStart2P', sans-serif;
     }
+    @media ${device.mobileS} {
+        padding: 0px 10px;
+    }
+    @media ${device.tablet} {
+        padding: 10px 30px;
+    }
+    @media ${device.laptop} {
+        padding: 10px 60px;
+    }
 `;
 
 export const PostHeaderSection = styled.div`
@@ -93,7 +127,12 @@ export const PostHeaderSection = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.3); // Optional: adds a light border
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Soft shadow for depth
     box-sizing: border-box; // Ensures padding doesn't affect overall width
-    padding: 10px 35px;
+    @media ${device.mobileS} {
+        padding: 10px 20px;
+    }
+    @media ${device.mobileM} {
+        padding: 10px 35px;
+    }
 `;
 
 export const Filters = styled.div`
@@ -124,4 +163,15 @@ export const Filters = styled.div`
             color: white;
         }
     }
+    @media ${device.mobileS} {
+        margin-top: 0px;
+        button {
+            margin-top: 10px;
+        }
+    }
+`;
+
+export const ControllerContainerBack = styled(ControllerContainer)`
+    padding-left: 0px;
+    padding-bottom: 5px;
 `;

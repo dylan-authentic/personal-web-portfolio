@@ -94,14 +94,14 @@ export default function AboutMe() {
                             </ControllerContainer> */}
                             {/* {!showNavbarParam && (<BackButton onClick={handleBackClick}>&lt; Back to start</BackButton>)} */}
                         </ContentWrapper>
-                        {showNavbarParam && (
-                        <ControllerContainer>
-                            <ControllerButtonTwo onClick={handleNextClick}>Next: Projects and Ventures &gt;</ControllerButtonTwo>
-                            <ControllerButtonTwo style={{display: 'block', color: 'red'}} onClick={handleBackClick}>&lt; Quit</ControllerButtonTwo>
-                        </ControllerContainer>
-                        )}
                 </GlassCardDark>
             </GlassCardContainer>
+            {showNavbarParam && (
+            <ControllerContainer>
+                <ControllerButtonTwo onClick={handleNextClick}>Next: Projects and Ventures &gt;</ControllerButtonTwo>
+                <ControllerButtonTwo style={{display: 'block', color: 'red'}} onClick={handleBackClick}>&lt; Quit</ControllerButtonTwo>
+            </ControllerContainer>
+            )}
         </Layout>
     )
 }

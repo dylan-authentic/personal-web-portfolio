@@ -10,6 +10,23 @@ export const GlassCardDark = styled(GlassCard)`
     background: rgba(255, 255, 255, 0.3); // Semi-transparent black
     position: relative;
     height: 75vh;
+    @media ${device.mobileS} {
+      margin: 5px 0px;
+      padding: 25px 1px;
+    }
+    @media ${device.mobileL} {
+      margin: 5px 12px;
+      padding: 25px 1px;
+    }
+    @media ${device.laptop} {
+      margin: 7px 12px;
+      padding: 20px 1px;
+    }
+    @media ${device.laptopL} {
+      margin: 10px 75px;
+      padding: 25px 1px;
+      height: auto;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -52,6 +69,7 @@ export const ContentWrapper = styled.div`
     overflow-x: hidden;
     max-height: 100%; // This will make the container's height not exceed the viewport height
     height: 100%;
+    width: 100%;
 
 
     h1 {
@@ -66,27 +84,41 @@ export const ContentWrapper = styled.div`
 
     @media ${device.mobileS} {
         // margin: 8px 10px 25px 10px;
-        padding: 26px 28px;
+        padding: 0px 23px;
+        h1 {
+          font-size: 25px;
+        }
         p {
             font-size: 12px;
         }
     }
     @media ${device.mobileM} {
         // margin: 8px 10px 25px 10px;
-        padding: 16px 40px;
+        padding: 16px 30px;
         p {
             font-size: 12px;
         }
     }
     @media ${device.tablet} {
         // margin: 8px 55px 25px 55px;
+        padding: 20px 75px;
         p {
-            font-size: 14px;
+            font-size: 13px;
         }
     }
     @media ${device.laptop} {
-        padding: 56px 120px;
+        padding: 10px 80px;
         // margin: 8px 110px 25px 110px;
+    }
+    @media ${device.laptopL} {
+      padding: 40px 130px;
+      // margin: 8px 110px 25px 110px;
+      height: auto;
+    }
+    @media ${device.desktop} {
+      padding: 100px 400px;
+      // margin: 8px 110px 25px 110px;
+      height: auto;
     }
 `;
 
@@ -170,6 +202,10 @@ export const ControllerContainer = styled.div`
   gap: 20px; // Space between buttons
   padding: 20px;
   // Additional styling...
+
+  @media ${device.mobileS} {
+    margin-top: 10px;
+  }
 `;
 
 export const ControllerButton = styled.button`

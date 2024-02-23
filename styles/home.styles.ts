@@ -28,7 +28,6 @@ export const GlassCard = styled.div`
     position: relative;
 
     @media ${device.mobileS} {
-      // ADJUST SIZING BELOW
       height: calc(100vh - 65px);
       margin: 25px 10px;
     }
@@ -56,7 +55,13 @@ export const Section = styled.div`
     width: auto;
     text-align: center;
     @media ${device.mobileS} {
-      margin-top: 180px;
+      margin-top: 160px;
+    }
+    @media ${device.laptop} {
+      margin-top: 120px;
+    }
+    @media ${device.laptopL} {
+      margin-top: 185px;
     }
     @media ${device.desktop} {
         margin-top: 340px;
@@ -122,7 +127,7 @@ export const IntroHeader = styled.div`
           font-size: 15px;
       }
       h3 {
-          font-size: 8px;
+          font-size: 10px;
           padding: 5px;
           margin: 10px;
       }
@@ -137,10 +142,10 @@ export const IntroHeader = styled.div`
     }
     @media ${device.mobileL} {
       h1 {
-          font-size: 18px;
+          font-size: 20px;
       }
       h3 {
-          font-size: 10px;
+          font-size: 11px;
           padding: 8px;
           margin: 16px 10px;
       }
@@ -150,7 +155,7 @@ export const IntroHeader = styled.div`
         font-size: 42px;
       }
       h1 {
-        font-size: 38px;
+        font-size: 36px;
       }
       h3 {
         font-size: 15px;
@@ -367,28 +372,49 @@ export const MainMenuOverlay = styled.div`
 
   @media ${device.mobileS} {
     h1 {
-      font-size: 14px; // Smaller font size for mobile devices
+      font-size: 15px; // Smaller font size for mobile devices
     }
     h2 {
       font-size: 16px;
     }
-    li, button {
-      font-size: 12px;
+    ul {
+      margin-top: 15px;
+    }
+    li{
+      // margin: 0px;
+    }
+    button {
+      font-size: 14px;
+      margin: 8px 0px;
     }
     .home-button {
-      font-size: 14px;
+      font-size: 11px;
+    }
+  }
+  @media ${device.mobileL} {
+    h1 {
+      font-size: 18px;
+    }
+    ul {
+      margin-top: 8px;
+    }
+    button {
+      font-size: 15px;
     }
   }
 
   @media ${device.tablet} {
     h1 {
-      font-size: 24px; // Slightly larger for tablets
+      font-size: 26px; // Slightly larger for tablets
     }
     h2 {
       font-size: 20px;
     }
     li, button {
-      font-size: 15px;
+      font-size: 19px;
+    }
+    .home-button {
+      font-size: 14px;
     }
   }
   @media ${device.laptop} {
@@ -398,10 +424,13 @@ export const MainMenuOverlay = styled.div`
     li, button {
       font-size: 20px;
     }
+    .home-button {
+      font-size: 16px;
+    }
   }
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
     h1 {
-      font-size: 28px;
+      font-size: 32px;
     }
     li, button {
       font-size: 24px;

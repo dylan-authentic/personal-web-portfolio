@@ -3,7 +3,7 @@ import { device } from '../../styles/media-breakpoints';
 
 const Wrapper = styled.div`
     height: ${props => props.home ? '100%' : '100%'};
-    width: 100vw;
+    width: 100%;
 
     // @media ${device.mobileS} {
     //   margin: 0px;
@@ -40,11 +40,12 @@ const NavBarWrapper = styled.div`
       margin: 0px 8px;
     }
     @media ${device.laptop} {
-      text-align: left;
+      text-align: center;
       padding: 20px;
     }
     @media ${device.laptopL} {
       margin: 0px 55px;
+      text-align: left;
     }
 `;
 
@@ -104,8 +105,13 @@ const NavMenu = styled.div`
       }
     }
     @media ${device.laptop} {
-      float: right;
+      //float: right;
       // padding-top: 15px;
+    }
+    @media ${device.laptopL} {
+      // margin: 11px 12px;
+      // padding: 25px 1px;
+      float: right;
     }
 `;
 

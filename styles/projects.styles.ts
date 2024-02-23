@@ -11,10 +11,23 @@ export const SectionPressed = styled.div`
     }
     @media ${device.mobileS} {
         margin: 0px 10px 40px 10px;
+        h1 {
+          font-size: 25px;
+          padding: 0px 5px;
+          margin-bottom: 16px;
+        }
     }
+    @media ${device.tablet} {
+      h1 {
+        padding: 0px 25px;
+      }
+  }
     @media ${device.laptop} {
         margin: 0px 55px 40px 55px;
     }
+    @media ${device.desktop} {
+      margin: 50px 300px;
+  }
 `;
 
 export const ProjectWrapper = styled.div`
