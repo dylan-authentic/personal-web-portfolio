@@ -114,6 +114,11 @@ export const IntroHeader = styled.div`
       //   color: black;
       // }
     }
+    h6 {
+      font-size: 14px;
+      margin: 0px;
+      padding: 0px;
+    }
     img {
       max-width: 100%; // Ensures the image is responsive
       height: auto;
@@ -127,7 +132,7 @@ export const IntroHeader = styled.div`
           font-size: 15px;
       }
       h3 {
-          font-size: 10px;
+          font-size: 7px;
           padding: 5px;
           margin: 10px;
       }
@@ -137,7 +142,7 @@ export const IntroHeader = styled.div`
           font-size: 17px;
       }
       h3 {
-        font-size: 10px;
+        font-size: 9px;
       }
     }
     @media ${device.mobileL} {
@@ -145,7 +150,7 @@ export const IntroHeader = styled.div`
           font-size: 20px;
       }
       h3 {
-          font-size: 11px;
+          font-size: 10px;
           padding: 8px;
           margin: 16px 10px;
       }
@@ -158,7 +163,7 @@ export const IntroHeader = styled.div`
         font-size: 36px;
       }
       h3 {
-        font-size: 15px;
+        font-size: 13px;
       }
     }
     @media ${device.laptopL} {
@@ -166,11 +171,8 @@ export const IntroHeader = styled.div`
         font-size: 58px;
       }
       h3 {
-        font-size: 20px;
+        font-size: 15px;
       }
-    }
-    @media ${device.laptopL} {
-    
     }
     @media ${device.desktop} {
       p {

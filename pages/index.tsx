@@ -11,10 +11,7 @@ import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, Retr
 // };
 
 const texts = [
-  "Freelance Projects",
-  "Technical Problem Solving",
-  "Product Management",
-  "Business Strategy and Delivery"
+  "Product Manager | Engineer | Available for Freelance Projects"
 ];
 
 export default function Home() {
@@ -83,7 +80,7 @@ export default function Home() {
                     </IntroHeader>
                     <IntroContent>
                       {/* <h3>Welcome!</h3> */}
-                        <RetroButton onClick={() => handleStartClick('/about?nav=1')}>&gt; PRESS START &lt;</RetroButton>
+                      <RetroButton onClick={() => handleStartClick('/about?nav=1')}>&gt; PRESS START &lt;</RetroButton>
                       <br/>
                       <br/>
                       <RetroButton onClick={() => setShowMenu(true)}>&gt; MAIN MENU &lt;</RetroButton>
