@@ -80,6 +80,8 @@ export const ContentWrapper = styled.div`
 
     p {
       margin: 0px;
+      margin-top: 10px;
+
     }
 
     @media ${device.mobileS} {
