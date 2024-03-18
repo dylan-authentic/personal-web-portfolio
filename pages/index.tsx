@@ -11,12 +11,13 @@ import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, Retr
 // };
 
 const texts = [
-  "Product Manager | Engineer | Available for Freelance Projects"
+  "Product Manager, Engineer, Available for Freelance Projects"
 ];
 
 export default function Home() {
   const router = useRouter();
   const menuParameter = router.query.menu === 'main' ? true: undefined;
+  const isFromInstagram = router.query.from;
 
   const [showMenu, setShowMenu] = useState(false);
   const [showFullScreenFadeIn, setShowFullScreenFadeIn] = useState(false);
@@ -102,7 +103,7 @@ export default function Home() {
                       <ul>
                         <li><button onClick={() => handleStartClick('/about?nav=1')}>About Me</button></li>
                         <li><button onClick={() => handleStartClick('/projects?nav=1')}>Projects + Ventures</button></li>
-                        <li><button onClick={() => handleStartClick('/insights?nav=1')}>Insights</button></li>
+                        <li><button onClick={() => handleStartClick('/insights?nav=1')}>Mini-blog</button></li>
                         <li><button onClick={() => handleStartClick('/hire?nav=1')}>Hire Me</button></li>
                       </ul>
                       <div className="home-button" onClick={handleBackClick}>&lt; Back to start</div>

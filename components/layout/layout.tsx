@@ -49,7 +49,7 @@ export default function Layout({
                   <Link href='/'>Home</Link>
                   <Link href='/about?nav=1'>About Me</Link>
                   <Link href='/projects?nav=1'>Projects + Ventures</Link>
-                  <Link href='/insights?nav=1'>Insights</Link>
+                  <Link href='/insights?nav=1'>Mini-blog</Link>
                   <Link href='/hire?nav=1'>Hire Me</Link>
                 </Styles.NavMenu>
               </Styles.Container>

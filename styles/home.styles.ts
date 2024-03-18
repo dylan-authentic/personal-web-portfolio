@@ -142,7 +142,7 @@ export const IntroHeader = styled.div`
           font-size: 17px;
       }
       h3 {
-        font-size: 9px;
+        font-size: 8px;
       }
     }
     @media ${device.mobileL} {
@@ -150,7 +150,7 @@ export const IntroHeader = styled.div`
           font-size: 20px;
       }
       h3 {
-          font-size: 10px;
+          font-size: 8px;
           padding: 8px;
           margin: 16px 10px;
       }

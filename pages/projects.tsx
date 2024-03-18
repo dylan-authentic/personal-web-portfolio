@@ -65,7 +65,7 @@ export default function Projects() {
                         github='https://github.com/dylan-authentic/python-data-vis' />
                 </ProjectWrapper>
                 <ControllerContainer>
-                    <ControllerButtonTwo onClick={handleNextClick}>Next: Insights &gt;</ControllerButtonTwo>
+                    <ControllerButtonTwo onClick={handleNextClick}>Next: Mini-blog &gt;</ControllerButtonTwo>
                     <ControllerButtonTwo style={{display: 'block', color: 'red'}} onClick={handleBackClick}>&lt; Quit</ControllerButtonTwo>
                 </ControllerContainer>
             </SectionPressed>

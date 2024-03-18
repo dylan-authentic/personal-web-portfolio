@@ -24,7 +24,7 @@ export default function TestPost() {
             <SectionPressed>
                 <ContactWrapper>
                     <h1>Hire Me</h1>
-                    <h3>I'm available for freelance projects or consulting</h3>
+                    <h3>I'm available for new opportunities, freelance projects or consulting</h3>
                     <LinkWrapper>
                         <a href="mailto:dyl.terrell25@gmail.com">📧 Email</a>
                     </LinkWrapper>

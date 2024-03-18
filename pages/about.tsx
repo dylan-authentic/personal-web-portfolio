@@ -71,14 +71,14 @@ export default function AboutMe() {
                     <ContentWrapper>
                         <h1>About Me</h1>
                         <p>
-                Greetings, I'm Dylan 👋🏽<br /><br />
+                I'm Dylan 👋🏽<br /><br />
                 I'm a product manager at Mediaocean, where I work on adtech solutions for enterprise advertisers. With a degree in computer science and over 6 years of technical roles, I've developed a versatile set of skills and experiences across full-stack software development and product building.<br /><br />
-                As a product manager, I drive outcomes through first principles thinking, feedback and collaboration, and employing systematic execution. I focus on establishing clear goals, creating practical plans, and continuously following through to achieve them.<br /><br />
+                As a product manager, I drive outcomes through first principles thinking, feedback and collaboration, and applying an algorithmic approach to execution. I establish clear goals, craft practical, flexible gameplans, and follow through continuously to achieve them.<br /><br />
                 I started my career interning as a software engineer in undergrad{isExpanded ? ', where I ' : ', where I...'}
                  {isExpanded && (
                     <>
-                        built a strong technical foundation. Post-graduation, I worked as a web & database administrator at the New York County Lawyers Association, where I honed my Data Analysis and SQL database management expertise. After this role, I pursued my first stint of entrepreneurship in self-employment, and began providing contract technology services to businesses. During this time, I gained valuable business experience and developed and launched successful software projects, including full-stack web applications, automation scripts, and app briefs for clients. During this experience of working with clients, I grew a liking for not only working on technical problems, but also identifying business and customer-specific problems that could be solved using technology. This led me to pursue product management full-time.<br /><br />
-                        I'm passionate about business, entrepreneurship, music, tech, and learning new things, and I'm based in New York City.<br /><br />
+                        built a strong technical foundation. Post-graduation, I worked as a web & database administrator at the New York County Lawyers Association, where I honed my Data Analysis and SQL database management skills. After this role, I pursued my first stint of entrepreneurship and self-employment, providing contract services to small and medium businesses. During this time, I gained valuable business experience and developed and launched successful software projects, including full-stack web applications, automation scripts, and app briefs for clients. This work grew my interest for not only working on technical problems, but also identifying business and customer problems that could be solved using software, leading me to pursue my current role in product management full-time.<br /><br />
+                        I'm passionate about business, entrepreneurship, music, tech, and learning new skills, and I'm based in New York City.<br /><br />
                     </>
                 )}
             </p>
