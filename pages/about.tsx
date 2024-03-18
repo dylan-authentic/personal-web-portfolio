@@ -18,8 +18,8 @@ export default function AboutMe() {
         setIsExpanded(!isExpanded);
     }
 
-    const expandedText = `, where I built a strong technical foundation. Post-graduation, I worked as a web & database administrator at the New York County Lawyers Association, where I honed my Data Analysis and SQL database management expertise. After this role, I pursued my first stint of entreprenuership in self-employment, and I began providing contract technology services to businesses. During this time, I gained valuable business experience and developed and launched successful software projects, including full-stack web applications, automation scripts, and app briefs for clients. During this experience of working with clients, I grew a liking for not only working on technical problems, but also identifying business and customer-specific problems that could be solved using technology. This led me to pursue product management full-time.{<br/>} {<br/>}I'm passionate about business, entreprenuership, music, tech, and learning new things, and I'm based in New York City.{<br/>} {<br/>}`;
-    const collapsedText = `...${<button onClick={handleSetIsExpanded}>Expand Text</button>}`
+    // const expandedText = `, where I built a strong technical foundation. Post-graduation, I worked as a web & database administrator at the New York County Lawyers Association, where I honed my Data Analysis and SQL database management expertise. After this role, I pursued my first stint of entreprenuership in self-employment, and I began providing contract technology services to businesses. During this time, I gained valuable business experience and developed and launched successful software projects, including full-stack web applications, automation scripts, and app briefs for clients. During this experience of working with clients, I grew a liking for not only working on technical problems, but also identifying business and customer-specific problems that could be solved using technology. This led me to pursue product management full-time.{<br/>} {<br/>}I'm passionate about business, entreprenuership, music, tech, and learning new things, and I'm based in New York City.{<br/>} {<br/>}`;
+    // const collapsedText = `...${<button onClick={handleSetIsExpanded}>Expand Text</button>}`
 
     // const [textWidth, setTextWidth] = useState(0);
     // const measureRef = useRef(null);
@@ -73,7 +73,7 @@ export default function AboutMe() {
                         <p>
                 I'm Dylan 👋🏽<br /><br />
                 I'm a product manager at Mediaocean, where I work on adtech solutions for enterprise advertisers. With a degree in computer science and over 6 years of technical roles, I've developed a versatile set of skills and experiences across full-stack software development and product building.<br /><br />
-                As a product manager, I drive outcomes through first principles thinking, feedback and collaboration, and applying an algorithmic approach to execution. I establish clear goals, craft practical, flexible gameplans, and follow through continuously to achieve them.<br /><br />
+                As a product manager, I drive outcomes through first principles thinking, feedback and collaboration, and applying an algorithmic approach to execution. I set clear goals, organize practical yet flexible gameplans, and follow through to achieve them.<br /><br />
                 I started my career interning as a software engineer in undergrad{isExpanded ? ', where I ' : ', where I...'}
                  {isExpanded && (
                     <>
