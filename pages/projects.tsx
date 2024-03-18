@@ -35,7 +35,6 @@ export default function Projects() {
                     <ProjectItem
                         title='&gt; Automated Data Entry'
                         description='A Node.js script that uses an open-source headless browser to automate browser actions'
-                        link='https://dylanauthentic.medium.com/how-i-created-a-51-cost-savings-for-my-client-using-simple-browser-automation-fb12052a8ae6'
                         github='https://github.com/dylan-authentic/data-entry-automation' />
                     <ProjectItem
                         title='&gt; My NBA Teams'
@@ -50,7 +49,7 @@ export default function Projects() {
                    <ProjectItem
                         title='&gt; Dylan-Dot-Engineering'
                         description='This website - Built using TypeScript, Next.js, and Styled Components'
-                        link='https://dylan.cafe'
+                        link='https://dylan.engineering'
                         github='https://github.com/dylan-authentic/dylan-dot-cafe' />
                     <ProjectItem
                         title='&gt; Daily Push Up-Streams'

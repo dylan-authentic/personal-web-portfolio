@@ -261,3 +261,30 @@ export const OffscreenDiv = styled.div`
   visibility: hidden; // Make sure it's not visible
   white-space: nowrap; // Prevent line breaks
 `;
+
+export const ExpandCollapseButton = styled.button`
+  background-color: transparent; // Assuming a transparent background
+  color: green; // Green text color
+  font-family: 'PressStart2P', sans-serif; // Retro font
+  font-size: 15px; // Adjust size as needed
+  cursor: pointer;
+  border: none; // No border for a text-like button
+  margin-top: 20px; // Spacing from the content above
+  text-shadow:
+    2px 0 0 #00ff00, // Right
+    -2px 0 0 #00ff00, // Left
+    0 2px 0 #00ff00, // Down
+    0 -2px 0 #00ff00, // Up
+    2px 2px 0 #00ff00; // Diagonal down right
+
+  &:hover {
+    color: white; // white on hover
+  }
+
+  @media ${device.mobileS} {
+    font-size: 11px;
+  }
+  @media ${device.tablet} {
+    font-size: 15px;
+  }
+`;
