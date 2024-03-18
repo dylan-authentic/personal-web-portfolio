@@ -19,11 +19,12 @@ export default function TestPost() {
     return (
         <Layout showNavbar={showNavbarParam}>
             <Head>
-                <title>Hire Me | {siteTitle}</title>
+                <title>Get in touch | {siteTitle}</title>
             </Head>
             <SectionPressed>
                 <ContactWrapper>
-                    <h1>Hire Me</h1>
+                    <h1>Get in touch</h1>
+                    <h2>Get in touch</h2>
                     <LinkWrapper>
                         <a href="mailto:dylan@dylan.engineering">📧 Email</a>
                     </LinkWrapper>
