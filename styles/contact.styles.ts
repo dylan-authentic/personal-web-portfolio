@@ -14,7 +14,7 @@ export const ContactWrapper = styled.div`
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Soft shadow for depth
     box-sizing: border-box; // Ensures padding doesn't affect overall width
     position: relative;
-    padding: 60px 70px;
+    padding: 40px 70px;
     text-align: center;
     a {
         font-family: 'PressStart2P', sans-serif;
@@ -31,6 +31,13 @@ export const ContactWrapper = styled.div`
 
     a:hover {
         transform: translateY(-5px);
+    }
+
+    h3 {
+        font-family: 'PressStart2P', sans-serif;
+        margin-bottom: 18px;
+        font-size: 12px;
+        color: white;
     }
 `;
 

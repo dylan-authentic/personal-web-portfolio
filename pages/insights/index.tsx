@@ -33,7 +33,7 @@ export default function Blog({ allPostsData }: { allPostsData: Array<PostData>})
     }
 
     const handleNextClick =() => {
-        router.push('/contact?nav=1')
+        router.push('/hire?nav=1')
     }
 
 
@@ -60,7 +60,7 @@ export default function Blog({ allPostsData }: { allPostsData: Array<PostData>})
             ))}
         </PostContainer>
         <ControllerContainer>
-            <ControllerButtonTwo onClick={handleNextClick}>Next: Contact Me &gt;</ControllerButtonTwo>
+            <ControllerButtonTwo onClick={handleNextClick}>Next: Hire Me &gt;</ControllerButtonTwo>
             <ControllerButtonTwo style={{display: 'block', color: 'red'}} onClick={handleBackClick}>&lt; Quit</ControllerButtonTwo>
         </ControllerContainer>
         </Layout>

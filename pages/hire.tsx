@@ -19,17 +19,17 @@ export default function TestPost() {
     return (
         <Layout showNavbar={showNavbarParam}>
             <Head>
-                <title>Get in touch | {siteTitle}</title>
+                <title>Hire Me | {siteTitle}</title>
             </Head>
             <SectionPressed>
                 <ContactWrapper>
-                    <h1>Get in touch</h1>
-                    <h2>Get in touch</h2>
+                    <h1>Hire Me</h1>
+                    <h3>I'm available for freelance projects or consulting</h3>
                     <LinkWrapper>
-                        <a href="mailto:dylan@dylan.engineering">📧 Email</a>
+                        <a href="mailto:dyl.terrell25@gmail.com">📧 dyl.terrell25@gmail.com</a>
                     </LinkWrapper>
                     <LinkWrapper>
-                        <a target='_blank' href="https://drive.google.com/file/d/1KVTY2TKNP7KY1gK4dTXbm-AIX0HL2br5/view?usp=sharing">⚙️ Resume (Available upon request)</a>
+                        <a target='_blank' href="">⚙️ Resume</a>
                     </LinkWrapper>
                     <LinkWrapper>
                         <a target='_blank' href="https://www.linkedin.com/in/dylan-terrell/">🤝 LinkedIn</a>

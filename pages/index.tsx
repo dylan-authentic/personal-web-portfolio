@@ -103,7 +103,7 @@ export default function Home() {
                         <li><button onClick={() => handleStartClick('/about?nav=1')}>About Me</button></li>
                         <li><button onClick={() => handleStartClick('/projects?nav=1')}>Projects + Ventures</button></li>
                         <li><button onClick={() => handleStartClick('/insights?nav=1')}>Insights</button></li>
-                        <li><button onClick={() => handleStartClick('/contact?nav=1')}>Contact Me</button></li>
+                        <li><button onClick={() => handleStartClick('/hire?nav=1')}>Hire Me</button></li>
                       </ul>
                       <div className="home-button" onClick={handleBackClick}>&lt; Back to start</div>
                     </MainMenuOverlay>
