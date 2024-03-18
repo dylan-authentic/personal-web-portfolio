@@ -99,7 +99,7 @@ export const IntroHeader = styled.div`
       &:hover {}
     }
     h3 {
-      color: #00ff00;
+      color: white;
       border: 2px solid #00ff00;
       border-radius: 50px;
       box-shadow: 0 9px #00ff00;
