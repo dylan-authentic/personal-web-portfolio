@@ -11,13 +11,13 @@ import { GlassCardContainer, GlassCard, Section, IntroHeader, IntroContent, Retr
 // };
 
 const texts = [
-  "Product Manager, Engineer, Available for Freelance Projects"
+  "Dylan Terrell, Product Manager & Engineer"
 ];
 
 export default function Home() {
   const router = useRouter();
   const menuParameter = router.query.menu === 'main' ? true: undefined;
-  const isFromInstagram = router.query.from;
+  const showFreelanceAvailable = router.query.freelance === 'yes' ? true : undefined;
 
   const [showMenu, setShowMenu] = useState(false);
   const [showFullScreenFadeIn, setShowFullScreenFadeIn] = useState(false);
@@ -77,7 +77,10 @@ export default function Home() {
                     <IntroHeader>
                       <p>🗽🏎️</p>
                       <h1>DYLAN.ENGINEERING</h1>
-                      <h3>{currentText}</h3>
+                      <h3>Product Manager & Engineer</h3>
+                      {showFreelanceAvailable && (
+                        <span style={{color: 'white', fontFamily: 'PressStart2P', fontSize: '9px'}}>Available for Freelance Projects</span>
+                        )}
                     </IntroHeader>
                     <IntroContent>
                       {/* <h3>Welcome!</h3> */}
