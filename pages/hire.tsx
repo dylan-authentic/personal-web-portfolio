@@ -26,7 +26,7 @@ export default function TestPost() {
                     <h1>Hire Me</h1>
                     <h3>I'm available for freelance projects or consulting</h3>
                     <LinkWrapper>
-                        <a href="mailto:dyl.terrell25@gmail.com">📧 dyl.terrell25@gmail.com</a>
+                        <a href="mailto:dyl.terrell25@gmail.com">📧 Email</a>
                     </LinkWrapper>
                     <LinkWrapper>
                         <a target='_blank' href="">⚙️ Resume</a>
