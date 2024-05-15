@@ -29,7 +29,7 @@ export default function TestPost() {
                         <a href="mailto:dyl.terrell25@gmail.com">📧 Email</a>
                     </LinkWrapper>
                     <LinkWrapper>
-                        <a target='_blank' href="">⚙️ Resume</a>
+                        <a target='_blank' href="https://drive.google.com/file/d/1JFGVWhNWiLzLsfEX45iYz73ehvwferW-/view?usp=sharing">⚙️ Resume</a>
                     </LinkWrapper>
                     <LinkWrapper>
                         <a target='_blank' href="https://www.linkedin.com/in/dylan-terrell/">🤝 LinkedIn</a>

@@ -44,7 +44,6 @@ export default function Projects() {
                     <ProjectItem
                         title='&gt; Authentic Marketplace'
                         description='A web app that uses React, GraphQL, and AWS to create a shoppable e-commerce marketplace.'
-                        link='https://dev.authentic.shop/'
                         github='https://github.com/authenticmarketplace/shop-cx-amplify-ui-service' />
                    <ProjectItem
                         title='&gt; Dylan-Dot-Engineering'
