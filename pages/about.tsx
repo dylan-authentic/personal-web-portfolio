@@ -72,7 +72,7 @@ export default function AboutMe() {
                         <h1>About Me</h1>
                         <p>
                 I'm Dylan 👋🏽<br /><br />
-                I'm a product manager at Mediaocean, where I work on adtech solutions for enterprise advertisers. I have a degree in computer science and over 6 years of technical roles, which have helped me develop a versatile range of skills and experiences across full-stack software development and product building.<br /><br />
+                I'm a product manager at Mediaocean, where I work on adtech solutions for enterprise advertisers. I have a bachelor's degree in computer science and over 6 years of technical roles, which have helped me develop a versatile range of skills and experiences across full-stack software development and product building.<br /><br />
                 As a product manager, I drive outcomes through first principles thinking, feedback and collaboration, and applying an algorithmic approach to execution. I set clear goals, organize practical yet flexible gameplans, and follow through to achieve them.<br/><br />
                 I started my career interning as a software engineer in undergrad{isExpanded ? ', where I ' : ', where I...'}
                  {isExpanded && (
