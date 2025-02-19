@@ -73,7 +73,7 @@ export default function AboutMe() {
                         <p>
                 I'm Dylan 👋🏽<br /><br />
                 I'm a product manager at Mediaocean, where I work on adtech solutions for enterprise advertisers. I have a bachelor's degree in computer science and over 6 years of experience in technical and product roles.<br /><br />
-                As a product manager, I drive outcomes through customer obsessions, strong attention to detail, understanding first principles, feedback and collaboration, and consistent execution. I work to set clear, measurable goals and follow through to achieve them.<br/><br />
+                As a product manager, I drive outcomes through customer obsession, strong attention to detail, understanding first principles, feedback and collaboration, and consistent execution. I work to set clear, measurable goals and follow through to achieve them.<br/><br />
                 I started my career interning as a software engineer in undergrad{isExpanded ? ', where I ' : ', where I...'}
                  {isExpanded && (
                     <>
