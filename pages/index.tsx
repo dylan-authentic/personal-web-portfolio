@@ -75,7 +75,7 @@ export default function Home() {
                 {!showMenu && (
                   <>
                     <IntroHeader>
-                      <p>🗽🏎️</p>
+                      <p>⚡</p>
                       <h1>DYLAN.ENGINEERING</h1>
                       <h3>Product Manager & Engineer</h3>
                       {showFreelanceAvailable && (
@@ -99,7 +99,7 @@ export default function Home() {
                   {showMenu && (
                     <MainMenuOverlay>
                       <IntroHeader>
-                        <p>🗽🏎️</p>
+                        <p>⚡</p>
                         <h1>DYLAN.ENGINEERING</h1>
                         <h3>Main Menu</h3>
                       </IntroHeader>

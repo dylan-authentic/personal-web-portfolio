@@ -24,12 +24,9 @@ export default function TestPost() {
             <SectionPressed>
                 <ContactWrapper>
                     <h1>Hire Me</h1>
-                    <h3>I'm available for new opportunities, freelance projects or consulting</h3>
+                    <h3>Let's connect</h3>
                     <LinkWrapper>
                         <a href="mailto:dyl.terrell25@gmail.com">📧 Email</a>
-                    </LinkWrapper>
-                    <LinkWrapper>
-                        <a target='_blank' href="https://drive.google.com/file/d/1JFGVWhNWiLzLsfEX45iYz73ehvwferW-/view?usp=sharing">⚙️ Resume</a>
                     </LinkWrapper>
                     <LinkWrapper>
                         <a target='_blank' href="https://www.linkedin.com/in/dylan-terrell/">🤝 LinkedIn</a>

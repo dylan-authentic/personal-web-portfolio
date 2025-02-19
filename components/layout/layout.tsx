@@ -42,7 +42,7 @@ export default function Layout({
               <Styles.Container>
                 <Styles.Brand>
                   <Link href="/">
-                    <h1>🗽🏎️ dylan.engineering </h1>
+                    <h1>⚡ dylan.engineering </h1>
                   </Link>
                 </Styles.Brand>
                 <Styles.NavMenu>
