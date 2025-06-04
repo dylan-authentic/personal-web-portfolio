@@ -77,7 +77,7 @@ export default function Home() {
                     <IntroHeader>
                       <p>⚡</p>
                       <h1>DYLAN.ENGINEERING</h1>
-                      <h3>Product Manager & Engineer</h3>
+                      <h3>Product Manager & Software Engineer</h3>
                       {showFreelanceAvailable && (
                         <span style={{color: 'white', fontFamily: 'PressStart2P', fontSize: '9px'}}>Available for Freelance Projects</span>
                         )}
